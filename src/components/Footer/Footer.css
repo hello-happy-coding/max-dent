@@ -1,0 +1,10 @@
+footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-logo img {
+    max-width: 150px;
+    height: auto;
+}
