@@ -1,21 +1,18 @@
 import React from 'react';
 import './App.css';
-import Footer from './components/Footer/Footer';
+import StickyFooter from './components/StickyFooter/StickyFooter';
+import Navbar from './components/Navbar/Navbar';
 
 function App() {
   return (
-    <div>
-      <header>
-        Navbar section
-      </header>
+    <div className="App">
+      <Navbar />
       <main>
-        Main section
+        <p>This is the main content of my website.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
       </main>
-      <footer>
-        <Footer />
-      </footer>
+      <StickyFooter />
     </div>
-
   );
 }
 
