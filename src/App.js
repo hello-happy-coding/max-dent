@@ -2,15 +2,13 @@ import React from 'react';
 import './App.css';
 import StickyFooter from './components/StickyFooter/StickyFooter';
 import Navbar from './components/Navbar/Navbar';
+import Main from './components/Main/Main';
 
 function App() {
   return (
     <div className="App">
       <Navbar />
-      <main>
-        <p>This is the main content of my website.</p>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-      </main>
+      <Main />
       <StickyFooter />
     </div>
   );
