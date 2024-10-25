@@ -1,5 +1,39 @@
 .img {
-    height: 400px;
-    width: 600px;
-    padding: 100px 50px 30px 400px;
+    height: 400px; 
+    width: 600px; 
+    padding: 60px 70px 30px;
+    float: right;
+}
+
+.welcome{
+    padding-top: 150px;
+    padding-left: 130px;
+    text-align: center;
+}
+
+.text-welcom {
+    padding-top: 50px;
+    padding-left: 100px;
+    text-align: center;
+}
+
+.star {
+    padding-left: 450px;
+    padding-top: 100px;
+    height: 80px;
+    width: 80px;
+}
+
+.star2{
+    height: 80px;
+    width: 80px;
+    padding-left: 1100px;
+}
+
+
+.aboutas {
+
+    padding-left: 400px;
+    text-align: center;
+    padding-right: 150px;
 }

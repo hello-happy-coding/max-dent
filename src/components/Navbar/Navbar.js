@@ -7,9 +7,9 @@ function Navbar() {
     <header>
       <img src={logow} alt='logo' className='white-logo'/>
       <nav>
-        <a href='link' >NASZA OFERTA</a>
-        <a href='link' >UL. NOWA 13, OLKUSZ</a>
-        <a href='link' className='number'>500 900 500</a>
+        <a href='link' ><b>NASZA OFERTA</b></a>
+        <a href='link' ><b>UL. NOWA 13, OLKUSZ</b></a>
+        <a href='link' className='number'><b>500 900 500</b></a>
       </nav>
     </header>
   );
