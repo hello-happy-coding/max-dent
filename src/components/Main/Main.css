@@ -1,7 +1,7 @@
 .img {
     height: 400px; 
     width: 600px; 
-    padding: 60px 70px 30px;
+    padding: 50px 70px 30px;
     float: right;
 }
 
@@ -13,12 +13,12 @@
 
 .text-welcom {
     padding-top: 50px;
-    padding-left: 100px;
+    padding-left: 90px;
     text-align: center;
 }
 
 .star {
-    padding-left: 450px;
+    padding-left: 150px;
     padding-top: 100px;
     height: 80px;
     width: 80px;
@@ -27,13 +27,16 @@
 .star2{
     height: 80px;
     width: 80px;
-    padding-left: 1100px;
+    padding-left: 1000px;
 }
 
 
 .aboutas {
-
-    padding-left: 400px;
+    padding-left: 200px;
     text-align: center;
-    padding-right: 150px;
+    padding-right: 200px;
+}
+
+.service {
+    padding-left: 150px;
 }
