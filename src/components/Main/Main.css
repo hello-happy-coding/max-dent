@@ -2,7 +2,7 @@
     height: 400px; 
     width: 600px; 
     float: right;
-    margin-top: 50px; 
+    margin-top: 40px; 
     margin-right: 100px;
     margin-left: 50px;
 }
@@ -23,20 +23,58 @@
 }
 
 .foto1 {
-    height: 150px;
-    width: 250px;
-    margin-left: 130px;
+    height: 200px;
+    width: 300px;
+    margin-left: 120px;
     margin-top: 50px;
+    float: left;
 }
 
-.First-visit {
-    font-size: 150%;
-    margin-left: 700px;
-    margin-right: 250px;
-}
-
-.visit-text {
-    margin-left: 500px;
+.first-visit {
+    font-size: 20px;
+    margin-left: 100vh;
+    margin-top: 30vh;
+    margin-right: 50vh;
     text-align: center;
-    justify-content:flex-end;
+}
+
+.first-paragraf {
+    margin-left: 20vh;
+    padding-right: 40;
+
+}
+
+.second-paragraf {
+    padding-right: 20px;
+    padding-left: 40px;
+    
+}
+
+.third-paragraf {
+    padding-right: 10vh;
+    padding-left: 10px;
+}
+
+.container {
+   display: flex;
+   margin-left: 70vh;
+   margin-top: 10vh;
+   margin-right: 20vh;
+}
+
+.service {
+    font-size: 20px;
+    margin-top: 10vh;
+    margin-left: 20vh;
+}
+
+.appointment {
+    background-color: black;
+    color: white;
+    margin-left: 20vh;
+    margin-right: 170vh;
+    text-align: center;
+    margin-top: 2vh;
+    padding-top: 5px;
+    padding-bottom: 5px;
 }

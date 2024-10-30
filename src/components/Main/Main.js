@@ -1,7 +1,7 @@
 import React from "react";
 import './Main.css';
 import images from '../../assets/images/main.jpg';
-import foto1 from '../../assets/images/foto1.jpg';
+import foto1 from '../../assets/images/kids.jpg';
 
 function Main() {
     return(
@@ -12,12 +12,16 @@ function Main() {
                 <p className='text-welcom'> Witaj w miejscu, gdzie zdrowy uśmiech spotyka się z nowoczesną opieką medyczną! Zadbamy o Twoje zęby w przyjaznej i bezstresowej atmosferze. Postaw na zdrowie i komfort!</p>
             </div>
             <img src={foto1} alt='img' className='foto1' />
-            <h1 className='First-visit'><b>PIERWSZA WIZYTA</b></h1>
-            <div className='visit-text'>
-                <div>Pierwsza wizyta to ważny krok w kierunku zdrowego uśmiechu, dlatego staramy się, aby każde pierwsze wrażenie było pozytywne i komfortowe</div>
-                <div>Indywidualne podejście do pacjenta jest dla nas priorytetem - każda osoba odwiedzająca nasz gabinet może liczyć na pełne zrozumienie swoich potrzeb oraz dokładne omówienie proponowanego planu leczenia. Stawiamy na otwartą komunikację i współpracę, aby wspólnie zadbać o zdrowie i estetykę Twojego uśmiechu. </div>
-                <div>Naszym celem jest nie tylko leczenie, ale również edukacja pacjentów o znaczeniu profilaktyki i zdrowych nawyków. Zależy nam na tym, abyś opuszczał nasz gabinet z poczuciem pewności, że jesteś w dobrych rękach. Zapraszamy do umówienia się na wizytę i dołączenia do grona naszych zdrowych pacjentów.</div>
+            <div className='first-visit'><b>PIERWSZA WIZYTA W NASZYM GABINECIE</b></div>
+            <div className='container'>
+                <div className='first-paragraf'>Pierwsza wizyta w gabinecie stomatologicznym może wydawać się stresująca, ale to doskonała okazja, by poznać jak dbać o zęby i zdrowie jamy ustnej. Najczęściej ma ona charakter zapoznawczy - to czas, by oswoić się z gabinetem, sprzętem oraz samym dętystą, szczególnie jeśli pacjentem jest dziecko.</div>
+                <div className='second-paragraf'>Lekarz przeprowadzi krótką rozmowę, pytając o ogólny stan zdrowia i ewentualne dolegliwości. Następnie sprawdzi stan zębów, dziąseł oraz jamy ustnej, często za pomocą lusterka i specjalistycznych narzędzi. Jeśli będzie to konieczne może wykonać także zdjęcie rętgenowskie, by zobaczyć więcej niż to, co jest widoczne. </div>
+                <div className='third-paragraf'>Po wstępnym badaniu dentysta najpierw udzieli wskazówek dotyczących codziennej higieny - doradzi, jak prawidłowo szczotkować zęby, jaką szczoteczkę i pastę wybrać, a także jak często wykonywać kontrole. To dobry moment, by zadać wszelkie pytania, które mogą się nasówać, dotyczące np. wpływu diety na stan uzębienia. Regularne wizyty to najlepszy sposób na zdrowe i mocne zęby przez całe życie.</div>
             </div>
+            <div className='service'><b>NASZE USŁUGI</b></div>
+            <div className='appointment'>UMÓW SIĘ NA WIZYTĘ</div>
+
+
         </body>
         
     )
