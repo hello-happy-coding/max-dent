@@ -1,10 +1,7 @@
-.img {
+.foto2{
     height: 400px; 
-    width: 600px; 
-    float: right;
-    margin-top: 40px; 
-    margin-right: 100px;
-    margin-left: 50px;
+    width: 100%;
+    display: block;
 }
 
 .welcome {
@@ -32,10 +29,8 @@
 
 .first-visit {
     font-size: 20px;
-    margin-left: 100vh;
-    margin-top: 30vh;
-    margin-right: 50vh;
     text-align: center;
+    border: 1px solid blue;
 }
 
 .first-paragraf {
@@ -57,24 +52,60 @@
 
 .container {
    display: flex;
-   margin-left: 70vh;
    margin-top: 10vh;
    margin-right: 20vh;
+   border: 1px solid blue;
 }
 
 .service {
     font-size: 20px;
-    margin-top: 10vh;
-    margin-left: 20vh;
 }
 
 .appointment {
     background-color: black;
     color: white;
-    margin-left: 20vh;
-    margin-right: 170vh;
     text-align: center;
-    margin-top: 2vh;
-    padding-top: 5px;
-    padding-bottom: 5px;
+}
+
+.main-box {
+    border: 1px solid black;
+    display: flex;
+    direction: row;
+    margin-top: 20px;
+}
+
+.first-column {
+    border: 2px solid red;
+    width: 40%;
+    flex-direction: column;
+    display: flex;
+}
+
+.second-column {
+    border: 3px solid greenyellow;
+    width: 60%;
+    flex-direction: column;
+    display: flex;
+}
+
+.image-container {
+    width: 100%;
+}
+
+.mega-container {
+    border: 2px solid green;
+}
+
+.offer {
+    border: 2px solid orange;
+    width: 100%;
+}
+
+.box {
+    border: 3px solid black;
+    background-color: brown;
+    width: 30%;
+    height: 100%;
+    text-align: center;
+
 }
