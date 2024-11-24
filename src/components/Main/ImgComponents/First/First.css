@@ -1,0 +1,23 @@
+.image {
+    position: relative;
+    height: 100vh;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    height: 150vh;
+    width: 100vp;
+}
+
+.content span.img-text {
+    background-color: #333;
+    text-transform: capitalize;
+    color: white;
+    padding: 1rem;
+    font-size: 1.5rem;
+    letter-spacing: 10px;
+    text-align: center;
+}
