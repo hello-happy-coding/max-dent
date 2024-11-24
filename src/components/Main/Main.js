@@ -4,12 +4,15 @@ import './Main.css';
 import ImageOne from '../../components/Main/ImgComponents/First/First';
 import ImageTwo from "./ImgComponents/Second/Second";
 import ImageThree from "./ImgComponents/Third/Third";
+import TextBox from "./ImgComponents/WelcomText/WelcomText";
 
 function App() {
     return(
         <div>
             <ImageOne />
+            <TextBox />
             <ImageTwo />
+            <TextBox />
             <ImageThree />
         </div>
     )

@@ -1,0 +1,6 @@
+.text-box {
+    letter-spacing: 4px;
+    text-transform: capitalize;
+    font: 1rem;
+    text-align: center;
+}
