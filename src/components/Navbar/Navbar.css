@@ -12,30 +12,45 @@ height: 8rem;
 
 .nav {
   background: white;
-  color:black;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
   gap: 2rem;
-  padding: 0 1rem;
+  padding: 0 5rem;
 }
 
-.nav ul {
+.default-link{
+  background-color: white;
+  color: black;
+}
+
+.number-link {
+  background-color: black;
+  color: white;
+}
+
+.nav-list {
   padding: 0;
   margin: 0;
   list-style: none;
   display: flex;
   gap: 1rem;
 }
-.nav a {
-  color: inherit;
+
+.nav .link {
   text-decoration: none;
   height: 100%;
   display: flex;
   align-items: center;
-  padding: .25rem;
+  padding: 10px;
 }
 
-.nav li:hover {
+.nav .link:hover {
   background-color: lightgray;
 }
+
+.nav .number-link:hover {
+  background-color: lightgray;
+  color: black;
+}
+
