@@ -10,7 +10,7 @@ function Navbar() {
         <ul className="nav-list">
           <li>
             <a href="offer" className="default-link link">
-              <b>NASZA OFERTA</b>
+              <b>NASZE USŁUGI</b>
             </a>
           </li>
           <li>

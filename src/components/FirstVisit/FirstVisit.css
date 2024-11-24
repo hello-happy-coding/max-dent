@@ -1,0 +1,14 @@
+.contener-first-visit {
+    margin: 120px;
+}
+
+.title-first-visit {
+    margin-bottom: 80px;
+}
+
+.text-first-visit-one {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+

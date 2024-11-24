@@ -5,6 +5,7 @@ import ImageOne from "./ImgComponents/First/First";
 import ImageTwo from "./ImgComponents/Second/Second";
 import ImageThree from "./ImgComponents/Third/Third";
 import TextBox from "./ImgComponents/WelcomText/WelcomText";
+import FirstVisit from "../FirstVisit/FirstVisit";
 
 function Main() {
   return (
@@ -12,7 +13,7 @@ function Main() {
       <ImageOne />
       <TextBox />
       <ImageTwo />
-      <TextBox />
+      <FirstVisit />
       <ImageThree />
     </div>
   );
