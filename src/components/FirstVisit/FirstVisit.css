@@ -3,7 +3,7 @@
 }
 
 .title-first-visit {
-    margin-bottom: 80px;
+    margin-bottom: 50px;
 }
 
 .text-first-visit-one {
@@ -12,3 +12,7 @@
     gap: 20px;
 }
 
+.line {
+    width: 50%;
+    margin-bottom: 20px;
+}
