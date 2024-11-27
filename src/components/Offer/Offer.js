@@ -1,7 +1,7 @@
 import React from 'react';
 import './Offer.css';
 
-const OffersArray=[{name:'Inplanty'},{name:'Endodoncja'},{name:'Protetyka'}];
+const OffersArray=[{name:'IMPLANTY'},{name:'CHIRURGIA'},{name:'PROTETYKA'},{name:'ORTODONCJA'},{name:'ENDODONCJA'},{name:'STOMATOLOGIA ZACHOWAWCZA'}];
 
 function Main() {
      return(
@@ -9,8 +9,8 @@ function Main() {
              {OffersArray.map((offer)=><Offer title={offer.name}/>)}
          </div>
 
-     )
- }
+     );
+ };
 
  export {Main};
 
