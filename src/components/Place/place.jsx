@@ -2,7 +2,12 @@ import React from "react";
 import "./place.css";
 
 const Place = () => {
-  return <div className="content-place">UMÓW SIĘ NA WIZYTĘ</div>;
+  return (
+    <div className="grid-place">
+      <div className="grid-item">1</div>
+      <div className="grid-item">2</div>
+      <div className="grid-item">3</div>
+    </div>
+  );
 };
-
 export default Place;

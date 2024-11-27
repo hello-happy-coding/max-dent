@@ -7,6 +7,7 @@ import ImageThree from "./ImgComponents/Third/Third";
 import TextBox from "./ImgComponents/WelcomText/WelcomText";
 import FirstVisit from "../FirstVisit/FirstVisit";
 import OuersServices from "../OuersServices/OuersServices";
+import Place from "../Place/place";
 
 function Main() {
   return (
@@ -17,6 +18,7 @@ function Main() {
       <FirstVisit />
       <ImageThree />
       <OuersServices />
+      <Place />
     </div>
   );
 }

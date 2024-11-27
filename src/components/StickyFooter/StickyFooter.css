@@ -10,12 +10,13 @@ footer {
   }
 
 .all-right {
-    margin: 50px;
+    margin-left: 50px;
 }
 
 .content-footer {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     text-decoration: none;
     list-style: none;
     gap: 1rem;
