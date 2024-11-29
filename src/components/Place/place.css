@@ -1,6 +1,30 @@
-.grid-place {
-   display: ruby;
-   margin: 50vh;
-   background-color: lightgrey;
+.appointment {
+    margin: 120px 120px 50px 120px;
+}
 
+.container-place {
+
+}
+
+.line-third {
+    width: 50%;
+    margin-bottom: 20px;
+    margin-left: 120px;
+}
+
+.grid-item {
+    list-style: none;
+    display: grid;
+}
+
+.grid-item-two {
+    list-style: none;
+   display: grid;
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  margin: 0;
+  padding: 0;
+}
+
+.grid {
+    border: 1px solid black;
 }

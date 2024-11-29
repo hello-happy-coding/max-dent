@@ -4,7 +4,6 @@ import "./Main.css";
 import ImageOne from "./ImgComponents/First/First";
 import ImageTwo from "./ImgComponents/Second/Second";
 import ImageThree from "./ImgComponents/Third/Third";
-import TextBox from "./ImgComponents/WelcomText/WelcomText";
 import FirstVisit from "../FirstVisit/FirstVisit";
 import OuersServices from "../OuersServices/OuersServices";
 import Place from "../Place/place";
@@ -13,11 +12,10 @@ function Main() {
   return (
     <div>
       <ImageOne />
-      <TextBox />
-      <ImageTwo />
       <FirstVisit />
-      <ImageThree />
+      <ImageTwo />
       <OuersServices />
+      <ImageThree />
       <Place />
     </div>
   );
