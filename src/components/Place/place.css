@@ -2,9 +2,6 @@
     margin: 120px 120px 50px 120px;
 }
 
-.container-place {
-
-}
 
 .line-third {
     width: 50%;
@@ -12,19 +9,36 @@
     margin-left: 120px;
 }
 
-.grid-item {
-    list-style: none;
-    display: grid;
+.table, th, td {
+     /* border: 1px solid black; */
+     margin: 20px 0px 50px;
 }
 
-.grid-item-two {
-    list-style: none;
-   display: grid;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  margin: 0;
-  padding: 0;
+ .table { 
+    margin-left: 120px;
+    float: left;  
+    /* background: lightgray;  */
+} 
+
+.mapa {
+    border: 2px solid red;
+    float: left;
+    margin-left: 100px;
 }
 
-.grid {
-    border: 1px solid black;
+.th-place {
+    padding-bottom: 50px;
+    text-align: left;
+}
+
+.td-calle {
+    padding-right: 120px;
+}
+
+.td-number {
+    padding-top: 20px;
+}
+
+.td-calle {
+    padding-bottom: 20px;
 }

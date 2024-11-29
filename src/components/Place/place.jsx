@@ -4,24 +4,38 @@ import Line from "../../assets/images/line.png";
 
 const Place = () => {
   return (
-    <div className="grid-place">
+    <div>
       <h3 className="appointment">UMÓW SIĘ NA WIZYTĘ</h3>
       <img src={Line} alt="line" className="line-third" />
-      <ul className="grid-item">
-        <li className="grid">Olkusz</li>
-        <li className="grid">Poniedziałek, Wtorek</li>
-        <li className="grid">Czwartek</li>
-        <li className="grid">11-18</li>
-        <li className="grid">500 800 500</li>
-        <li className="grid">ark.zurek@gmail.com</li>
-      </ul>
-      <ul className="grid-item-two">
-        <li className="grid">Katowice</li>
-        <li className="grid">Środa, Czwartek</li>
-        <li className="grid">10-18</li>
-        <li className="grid"> 500 500 500</li>
-        <li className="grid">dental.care@gmai.com</li>
-      </ul>
+      <div className="table">
+        <table>
+          <tr>
+            <th className="th-place">Olkusz</th>
+            <th className="th-place">Katowice</th>
+          </tr>
+          <tr>
+            <td className="td-calle">ul. Nowa 13, Olkusz</td>
+            <td className="td-calle">ul. Rolna 17b/1, Katowice</td>
+          </tr>
+          <tr>
+            <td className="td-semana">Poniedziałek, Wtorek, Czwartek</td>
+            <td className="td-semana">Środa, Czwartek</td>
+          </tr>
+          <tr>
+            <td>11-18</td>
+            <td>10-18</td>
+          </tr>
+          <tr>
+            <td className="td-number">500 500 500</td>
+            <td className="td-number">500 500 500</td>
+          </tr>
+          <tr>
+            <td className="td-adress">ark.zurek@gmail.com</td>
+            <td className="td-adress">dental.care@gmail.com</td>
+          </tr>
+        </table>
+      </div>
+      <div className="mapa"></div>
     </div>
   );
 };
