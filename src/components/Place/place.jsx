@@ -1,7 +1,6 @@
 import React from "react";
 import "./place.css";
 import Line from "../../assets/images/line.png";
-import SVG from "../../assets/images/svg.svg";
 
 const Place = () => {
   return (
@@ -36,9 +35,7 @@ const Place = () => {
           </tr>
         </table>
       </div>
-      <div className="mapa">
-        <SVG />
-      </div>
+      <div className="mapa"></div>
     </div>
   );
 };

@@ -1,7 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" fill="none" xmlns:xlink="http://www.w3.org/1999/xlink">
-    <!-- Kontury mapy Polski -->
-    <path d="M500,100 L550,130 L580,200 L620,210 L640,250 L620,290 L580,310 
-             L550,350 L520,400 L490,450 L450,470 L400,500 L380,550 L350,570 
-             L300,550 L250,530 L200,500 L180,450 L200,400 L220,350 L250,300 
-             L300,270 L350,250 L400,230 L450,200 L500,100 Z" stroke="#000" fill="none" stroke-width="3" />
-</svg>
