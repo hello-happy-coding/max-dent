@@ -1,11 +1,14 @@
 import React from "react";
 import "./place.css";
 import Line from "../../assets/images/line.png";
+import "animate.css";
 
 const Place = () => {
   return (
     <div>
-      <h3 className="appointment">UMÓW SIĘ NA WIZYTĘ</h3>
+      <h3 className="appointment animate__jello animate__animated">
+        UMÓW SIĘ NA WIZYTĘ
+      </h3>
       <img src={Line} alt="line" className="line-third" />
       <div className="table">
         <table>
