@@ -1,0 +1,31 @@
+.tiles-section {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .tile {
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    padding: 16px;
+    text-align: center;
+    width: calc(25% - 20px);
+  }
+  
+  .tile-icon {
+    font-size: 2rem;
+    margin-bottom: 8px;
+    color: #007bff;
+  }
+  
+  .tile-title {
+    font-size: 1.25rem;
+    margin: 8px 0;
+    font-weight: bold;
+  }
+  
+  .tile-description {
+    font-size: 1rem;
+    color: #666;
+  }
+  

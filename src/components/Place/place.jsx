@@ -2,13 +2,13 @@ import React from "react";
 import "./place.css";
 import Line from "../../assets/images/line.png";
 import "animate.css";
+import GoogleMap from "./GoogleMaps";
+import FB from "../../assets/images/facebook.png";
 
 const Place = () => {
   return (
     <div>
-      <h3 className="appointment animate__jello animate__animated">
-        UMÓW SIĘ NA WIZYTĘ
-      </h3>
+      <h3 className="appointment">ZAPLANUJ WIZYTĘ</h3>
       <img src={Line} alt="line" className="line-third" />
       <div className="table">
         <table>
@@ -38,8 +38,14 @@ const Place = () => {
           </tr>
         </table>
       </div>
-      <div className="mapa"></div>
+      <div>
+        <img src={FB} alt="fb" className="fb" />
+      </div>
+      <div>
+        <GoogleMap />
+      </div>
     </div>
   );
 };
+
 export default Place;

@@ -10,6 +10,7 @@ function StickyFooter() {
         <li className='all-right'>&copy; 2024 My Website. All rights reserved.</li>
         <li className='happy-coding'>By Happy Coding</li>
       </ul>
+
     </footer>
   );
 }

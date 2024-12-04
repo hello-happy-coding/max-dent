@@ -10,21 +10,14 @@
 }
 
 .table, th, td {
-     /* border: 1px solid black; */
-     margin: 20px 0px 50px;
+     margin: 20px 0px 50px; 
 }
 
- .table { 
-    padding: 120px 30px 120px 120px;
-    float: left;  
+ .table {   
     background: lightgray;  
+    padding: 50px 0px 100px 200px;
 } 
 
-.mapa {
-    border: 2px solid red;
-    float: left;
-    margin-left: 100px;
-}
 
 .th-place {
     padding-bottom: 50px;
@@ -32,7 +25,7 @@
 }
 
 .td-calle {
-    padding-right: 120px;
+    padding-right: 300px;
 }
 
 .td-number {
