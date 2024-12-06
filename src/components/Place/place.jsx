@@ -4,6 +4,8 @@ import Line from "../../assets/images/line.png";
 import "animate.css";
 import GoogleMap from "./GoogleMaps";
 import FB from "../../assets/images/facebook.png";
+import IG from "../../assets/images/ig.png";
+import Facebook from "../Place/Facebook";
 
 const Place = () => {
   return (
@@ -38,8 +40,9 @@ const Place = () => {
           </tr>
         </table>
       </div>
-      <div>
+      <div className="fb-icon">
         <img src={FB} alt="fb" className="fb" />
+        <img src={IG} alt="ig" className="ig" />
       </div>
       <div>
         <GoogleMap />

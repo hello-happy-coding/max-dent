@@ -15,9 +15,10 @@
 
  .table {   
     background: lightgray;  
-    padding: 50px 0px 100px 200px;
+    padding: 50px 0px 100px 200px; 
+    float: left;
+    width: 80%;
 } 
-
 
 .th-place {
     padding-bottom: 50px;
@@ -25,7 +26,7 @@
 }
 
 .td-calle {
-    padding-right: 300px;
+    padding-right: 200px;
 }
 
 .td-number {
@@ -34,4 +35,24 @@
 
 .td-calle {
     padding-bottom: 20px;
+}
+
+.fb-icon {
+    float: left;
+    width: 20%;
+    margin: 20px 0px 20px;
+    background: lightgray;
+    padding-top: 354px;
+}
+
+.fb {
+    width: 30px;
+    height: 30px;
+    
+}
+
+.ig {
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
 }
