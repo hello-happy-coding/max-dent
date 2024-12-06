@@ -1,4 +1,5 @@
 import React from "react";
+
 import { useEffect } from "react";
 
 const GoogleMap = () => {
@@ -42,7 +43,6 @@ const GoogleMap = () => {
       document.body.removeChild(script);
     };
   }, []);
-
   return <div id="map" style={{ width: "100%", height: "500px" }} />;
 };
 

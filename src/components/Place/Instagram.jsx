@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import FB from "../../assets/images/facebook.png";
+import IG from "../../assets/images/ig.png";
 
-const FacebookIcon = () => {
+const InstagramIcon = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => {
@@ -12,14 +12,11 @@ const FacebookIcon = () => {
   };
 
   const handleClick = () => {
-    window.open(
-      "https://www.facebook.com/p/Praktyka-Stomatologiczna-Arkadiusz-%C5%BBurek-100063535452341/?locale=nl_NL&_rdr",
-      "_blanc"
-    );
+    window.open("https://www.instagram.com/ortho.of.care/", "_blanc");
   };
   return (
     <img
-      src={FB}
+      src={IG}
       alt="klik"
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
@@ -30,10 +27,11 @@ const FacebookIcon = () => {
         height: "30px",
         backgroundColor: isHovered ? "orange" : "lightgray",
         transistion: "background-color 0.4s ease",
-        borderRadius: "2px",
+        borderRadius: "5px",
+        marginLeft: "20px",
       }}
     />
   );
 };
 
-export default FacebookIcon;
+export default InstagramIcon;

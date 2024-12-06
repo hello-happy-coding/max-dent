@@ -3,9 +3,8 @@ import "./place.css";
 import Line from "../../assets/images/line.png";
 import "animate.css";
 import GoogleMap from "./GoogleMaps";
-import FB from "../../assets/images/facebook.png";
-import IG from "../../assets/images/ig.png";
 import Facebook from "../Place/Facebook";
+import InstagramIcon from "./Instagram";
 
 const Place = () => {
   return (
@@ -42,7 +41,7 @@ const Place = () => {
       </div>
       <div className="fb-icon">
         <Facebook />
-        <img src={IG} alt="ig" className="ig" />
+        <InstagramIcon />
       </div>
       <div>
         <GoogleMap />
