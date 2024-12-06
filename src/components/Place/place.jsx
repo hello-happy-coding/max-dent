@@ -41,7 +41,7 @@ const Place = () => {
         </table>
       </div>
       <div className="fb-icon">
-        <img src={FB} alt="fb" className="fb" />
+        <Facebook />
         <img src={IG} alt="ig" className="ig" />
       </div>
       <div>
