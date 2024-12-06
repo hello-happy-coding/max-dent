@@ -1,49 +1,56 @@
-import React from "react";
-
-import { useEffect } from "react";
+import React, { useEffect } from "react";
 
 const GoogleMap = () => {
   useEffect(() => {
     const initMap = () => {
+      // Inicjalizacja mapy
       const map = new window.google.maps.Map(document.getElementById("map"), {
-        center: { lat: 50.0647, lng: 19.9409 }, // Center of Poland
-        zoom: 6, // Adjust zoom level
+        center: { lat: 50.253, lng: 19.279 }, // Punkt centralny między Olkuszem a Katowicami
+        zoom: 8,
       });
 
-      // Geocode and add markers
-      const geocoder = new window.google.maps.Geocoder();
-      const addresses = [
-        { address: "ul. Nowa 13, Olkusz", label: "A" },
-        { address: "ul. Rolna 17/1, Katowice", label: "B" },
+      // Lista lokalizacji
+      const locations = [
+        { address: "Nowa 13, Olkusz", lat: 50.2759827, lng: 19.556 },
+        { address: "Rolna 17, Katowice", lat: 50.231168, lng: 19.004 },
       ];
 
-      addresses.forEach(({ address, label }) => {
-        geocoder.geocode({ address }, (results, status) => {
-          if (status === "OK") {
-            new window.google.maps.Marker({
-              position: results[0].geometry.location,
-              map,
-              label,
-            });
-          } else {
-            console.error(`Geocode error: ${status}`);
-          }
+      // Dodanie markerów
+      locations.forEach((location) => {
+        new window.google.maps.Marker({
+          position: { lat: location.lat, lng: location.lng },
+          map: map,
+          title: location.address,
         });
       });
     };
 
-    // Load the Google Maps script dynamically
+    // Ładowanie Google Maps API
     const script = document.createElement("script");
-    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&libraries=places`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY`;
     script.async = true;
     script.onload = initMap;
     document.body.appendChild(script);
 
     return () => {
+      // Usunięcie skryptu po odmontowaniu komponentu
       document.body.removeChild(script);
     };
   }, []);
-  return <div id="map" style={{ width: "100%", height: "500px" }} />;
+
+  return (
+    <div>
+      <div
+        id="map"
+        style={{
+          width: "100%",
+          height: "500px",
+          borderRadius: "8px",
+          border: "1px solid #ccc",
+        }}
+      />
+    </div>
+  );
 };
 
 export default GoogleMap;

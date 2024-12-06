@@ -9,7 +9,7 @@ import InstagramIcon from "./Instagram";
 const Place = () => {
   return (
     <div>
-      <h3 className="appointment">ZAPLANUJ WIZYTĘ</h3>
+      <h3 className="appointment">UMÓW SIĘ NA WIZYTĘ</h3>
       <img src={Line} alt="line" className="line-third" />
       <div className="table">
         <table>
@@ -23,7 +23,7 @@ const Place = () => {
           </tr>
           <tr>
             <td className="td-semana">Poniedziałek, Wtorek, Czwartek</td>
-            <td className="td-semana">Środa, Czwartek</td>
+            <td className="td-semana">Środa, Piątek</td>
           </tr>
           <tr>
             <td>11-18</td>
@@ -44,7 +44,7 @@ const Place = () => {
         <InstagramIcon />
       </div>
       <div>
-        <GoogleMap />
+        <GoogleMap />{" "}
       </div>
     </div>
   );

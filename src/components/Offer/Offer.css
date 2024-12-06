@@ -1,31 +1,37 @@
 .tiles-section {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .tile {
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    padding: 16px;
-    text-align: center;
-    width: calc(25% - 20px);
-  }
-  
-  .tile-icon {
-    font-size: 2rem;
-    margin-bottom: 8px;
-    color: #007bff;
-  }
-  
-  .tile-title {
-    font-size: 1.25rem;
-    margin: 8px 0;
-    font-weight: bold;
-  }
-  
-  .tile-description {
-    font-size: 1rem;
-    color: #666;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.tile {
+  background-color: #f4f4f4;
+  border-radius: 8px; 
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.tile:hover {
+  background-color: orange;
+  transform: scale(1.05);
+}
+
+.tile-icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #555;
+}
+
+.tile-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.tile-description {
+  font-size: 0.9rem;
+  color: #777;
+}
