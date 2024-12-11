@@ -2,7 +2,6 @@ import React from "react";
 import "./place.css";
 import Line from "../../assets/images/line.png";
 import "animate.css";
-import GoogleMap from "./GoogleMaps";
 import Facebook from "../Place/Facebook";
 import InstagramIcon from "./Instagram";
 
@@ -42,9 +41,6 @@ const Place = () => {
       <div className="fb-icon">
         <Facebook />
         <InstagramIcon />
-      </div>
-      <div>
-        <GoogleMap />{" "}
       </div>
     </div>
   );

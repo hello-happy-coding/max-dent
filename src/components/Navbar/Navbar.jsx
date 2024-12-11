@@ -6,15 +6,24 @@ function Navbar() {
   return (
     <header>
       <nav className="nav">
-        <img src={logow} alt="logo" className="white-logo" />
-        <ul className="nav-list">
+        <img
+          src={logow}
+          alt="logo"
+          className="white-logo animate__animated animate__fadeIn"
+        />
+        <ul className="nav-list animate__animated animate__fadeIn">
           <li>
-            <a href="offer" className="default-link link">
-              <b>NASZE USŁUGI</b>
+            <a href="#nasza-oferta" className="default-link link">
+              <b>NASZA OFERTA</b>
             </a>
           </li>
           <li>
-            <a href="location" className="default-link link">
+            <a
+              href="https://maps.app.goo.gl/Xx2G8JeoEFtho7Sm8"
+              className="default-link link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <b>UL. NOWA 13, OLKUSZ</b>
             </a>
           </li>
