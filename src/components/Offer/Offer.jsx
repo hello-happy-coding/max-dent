@@ -1,6 +1,6 @@
 import React from "react";
 import "./Offer.css";
-import { Link } from "react-router-dom";
+import Tile from "../Tile/Tile";
 
 const tilesData = [
   {
@@ -45,16 +45,7 @@ const tilesData = [
   },
 ];
 
-const Tile = ({ title, description, url }) => {
-  return (
-    <Link to={url} target="_blank" rel="noopener noreferrer" className="tile">
-      <h3 className="tile-title">{title}</h3>
-      <p className="tile-description">{description}</p>
-    </Link>
-  );
-};
-
-const TilesSection = () => (
+const Offer = () => (
   <div className="tiles-section">
     {tilesData.map((tile, index) => (
       <Tile
@@ -67,4 +58,4 @@ const TilesSection = () => (
   </div>
 );
 
-export default TilesSection;
+export default Offer;

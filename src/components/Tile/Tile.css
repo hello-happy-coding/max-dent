@@ -1,0 +1,24 @@
+.tile-title {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .tile-description {
+    font-size: 0.9rem;
+    color: #777;
+  }
+
+  .tile {
+    background-color: #f4f4f4;
+    border-radius: 8px; 
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .tile:hover {
+    background-color: orange;
+    transform: scale(1.05);
+  }
