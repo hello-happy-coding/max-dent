@@ -1,5 +1,6 @@
 import React from "react";
 import "./Offer.css";
+import { Link } from "react-router-dom";
 
 const tilesData = [
   {
@@ -44,13 +45,12 @@ const tilesData = [
   },
 ];
 
-const Tile = ({ title, description, icon, url }) => {
+const Tile = ({ title, description, url }) => {
   return (
-    <a href={url} target="_blank" rel="noopener noreferrer" className="tile">
-      <i className={`tile-icon ${icon}`} aria-hidden="true"></i>
+    <Link to={url} target="_blank" rel="noopener noreferrer" className="tile">
       <h3 className="tile-title">{title}</h3>
       <p className="tile-description">{description}</p>
-    </a>
+    </Link>
   );
 };
 
