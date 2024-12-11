@@ -45,9 +45,6 @@ const tilesData = [
 ];
 
 const Tile = ({ title, description, icon, url }) => {
-  // const handleClick = () => {
-  window.open(url, "_blank");
-  // };
   return (
     <a href={url} target="_blank" rel="noopener noreferrer" className="tile">
       <i className={`tile-icon ${icon}`} aria-hidden="true"></i>
@@ -56,13 +53,6 @@ const Tile = ({ title, description, icon, url }) => {
     </a>
   );
 };
-// return (
-//   <div className="tile" onClick={handleClick}>
-//     <i className={`tile-icon ${icon}`} aria-hidden="true"></i>
-//     <h3 className="tile-title">{title}</h3>
-//     <p className="tile-description">{description}</p>
-//   </div>
-// );
 
 const TilesSection = () => (
   <div className="tiles-section">

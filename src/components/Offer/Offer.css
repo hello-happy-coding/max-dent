@@ -35,3 +35,14 @@
   font-size: 0.9rem;
   color: #777;
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover,
+a:active {
+  text-decoration: none;
+  color: inherit;
+}
