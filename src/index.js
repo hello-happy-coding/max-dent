@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import OfferDetail from "./components/OfferDetail/OfferDetail";
 import ImplantPhoto from "./assets/images/implanty.jpg";
-import './fonts/Lora.ttf';
+import './fonts/Libre.ttf';
 
 
 
