@@ -10,37 +10,27 @@ const Place = () => {
     <div>
       <h3 className="appointment">UMÓW SIĘ NA WIZYTĘ</h3>
       <img src={Line} alt="line" className="line-third" />
-      <div className="table">
-        <table>
-          <tr>
-            <th className="th-place">Olkusz</th>
-            <th className="th-place">Katowice</th>
-          </tr>
-          <tr>
-            <td className="td-calle">ul. Nowa 13, Olkusz</td>
-            <td className="td-calle">ul. Rolna 17b/1, Katowice</td>
-          </tr>
-          <tr>
-            <td className="td-semana">Poniedziałek, Wtorek, Czwartek</td>
-            <td className="td-semana">Środa, Piątek</td>
-          </tr>
-          <tr>
-            <td>11-18</td>
-            <td>10-18</td>
-          </tr>
-          <tr>
-            <td className="td-number">500 500 500</td>
-            <td className="td-number">500 500 500</td>
-          </tr>
-          <tr>
-            <td className="td-adress">ark.zurek@gmail.com</td>
-            <td className="td-adress">dental.care@gmail.com</td>
-          </tr>
-        </table>
-      </div>
-      <div className="fb-icon">
-        <Facebook />
-        <InstagramIcon />
+      <div className="Information">
+        <div className="Olkusz">
+          <div className="city">OLKUSZ</div>
+          <div className="streat">ul. Nowa 13, Olkusz</div>
+          <div className="day">Poniedziałek, Wtorek, Czwartek</div>
+          <div className="houer">11-18</div>
+          <div className="tel">500 900 500</div>
+          <div className="mail">ark.zurek@gmail.com</div>
+        </div>
+        <div className="Katowice">
+          <div className="city">KATOWICE</div>
+          <div className="streat">ul. Rolna 17/1, Katowice</div>
+          <div className="day">Środa, Piątek</div>
+          <div className="houer">10-18</div>
+          <div className="tel">500 900 500</div>
+          <div className="mail">dental.care@gmail.com</div>
+        </div>
+        <div className="fb-icon">
+          <Facebook />
+          <InstagramIcon />
+        </div>
       </div>
     </div>
   );

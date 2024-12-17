@@ -9,47 +9,12 @@
     margin-left: 120px;
 }
 
-.table, th, td {
-     margin: 20px 0px 50px; 
-}
-
- .table {   
-    background: lightgray;  
-    padding: 50px 0px 100px 200px; 
-    float: left;
-    width: 80%;
-} 
-
-.th-place {
-    padding-bottom: 50px;
-    text-align: left;
-}
-
-.td-calle {
-    padding-right: 200px;
-}
-
-.td-number {
-    padding-top: 20px;
-}
-
-.td-calle {
-    padding-bottom: 20px;
-}
-
-.fb-icon {
-    float: left;
-    width: 20%;
-    margin: 20px 0px 20px;
-    background: lightgray;
-    padding-top: 336px;
-}
-
-
-
 .ig {
     width: 30px;
     height: 30px;
     margin-left: 20px;
 }
 
+.Information {
+    background-color: lightgray;
+}
