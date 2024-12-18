@@ -3,6 +3,14 @@ import logow from "../../assets/logo/logow.svg";
 import "./Navbar.css";
 
 function Navbar() {
+  const handleSmoothScroll = (event, id) => {
+    event.preventDefault();
+    const section = document.getElementById(id);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
+
   return (
     <header>
       <nav className="nav">
@@ -13,7 +21,11 @@ function Navbar() {
         />
         <ul className="nav-list animate__animated animate__fadeIn">
           <li>
-            <a href="#nasza-oferta" className="default-link link">
+            <a
+              href="#nasza-oferta"
+              className="default-link link"
+              onClick={(e) => handleSmoothScroll(e, "nasza-oferta")}
+            >
               <b>NASZA OFERTA</b>
             </a>
           </li>
@@ -28,8 +40,12 @@ function Navbar() {
             </a>
           </li>
           <li>
-            <a href="number" className="number-link link">
-              <b>500 900 500</b>
+            <a
+              href="number"
+              className="number-link link"
+              onClick={(e) => handleSmoothScroll(e, "umów się na wizytę")}
+            >
+              <b> +48 500 900 500</b>
             </a>
           </li>
         </ul>

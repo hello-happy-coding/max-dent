@@ -10,13 +10,13 @@
     position: absolute;
     height: 150vh;
     width: 100vh;
+    opacity: 0.33;
     
 }
 
-.content span.img-text {
-    background-color: #333;
-    text-transform: capitalize;
-    color: white;
+.content .img-text {
+    /* text-transform: capitalize; */
+    color: rgb(0, 0, 0);
     padding: 1rem;
     font-size: 1.5rem;
     letter-spacing: 10px;

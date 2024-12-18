@@ -13,11 +13,10 @@
 }
 
 .content span.img-text {
-    background-color: #333;
     text-transform: capitalize;
-    color: white;
+    color: rgb(0, 0, 0);
     padding: 1rem;
     font-size: 1.5rem;
     letter-spacing: 10px;
-    text-align: center;
+    text-align: center; 
 }

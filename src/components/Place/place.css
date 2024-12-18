@@ -1,7 +1,7 @@
 .appointment {
     margin: 120px 120px 50px 120px;
+    line-height: 1.5;
 }
-
 
 .line-third {
     width: 50%;
@@ -17,4 +17,42 @@
 
 .Information {
     background-color: lightgray;
+    display: flex;
+}
+
+.Olkusz {
+     margin: 100px;  
+}
+
+.Katowice {
+     margin: 100px;
+}
+
+.fb-icon {
+    margin-top: 20px;
+    margin-left: 100px;
+}
+
+.city {
+    margin-bottom: 20px;
+    color: rgb(116, 109, 109);
+}
+
+.location {
+    width: 20px;
+    height: 20px;
+}
+
+.streat {
+    margin-bottom: 10px;
+}
+
+.houer {
+    margin-bottom: 10px;
+}
+
+.socialText {
+    margin-top: 75px; 
+    margin-bottom: 30px;
+    color: rgb(116, 109, 109);
 }

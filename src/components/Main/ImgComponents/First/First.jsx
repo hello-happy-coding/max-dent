@@ -1,6 +1,6 @@
 import React from "react";
 import { Parallax } from "react-parallax";
-import Tools from "../../../../assets/images/pp.jpg";
+import Tools from "../../../../assets/images/one.jpg";
 
 const ImageOne = () => (
   <Parallax
