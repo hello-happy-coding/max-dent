@@ -10,7 +10,9 @@ const ImageOne = () => (
   >
     <div className="content">
       <span className="img-text animate__animated animate__fadeIn">
-        WITAJ W MAX DENT PRYWATNEJ PRAKTYCE STOMATOLOGICZNEJ
+        WITAJ W MAX DENT PRYWATNEJ PRAKTYCE
+        <br />
+        STOMATOLOGICZNEJ
       </span>
     </div>
   </Parallax>
