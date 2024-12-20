@@ -1,14 +1,50 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Tile.css";
-import { Link } from "react-router-dom";
 
-const Tile = ({ title, description, url }) => {
+const Tile = ({ title, description, modalText, modalImage }) => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const openModal = () => setModalOpen(true);
+  const closeModal = () => setModalOpen(false);
+
   return (
-    <Link to={url} target="_blank" rel="noopener noreferrer" className="tile">
-      <h3 className="tile-title">{title}</h3>
-      <p className="tile-description">{description}</p>
-    </Link>
+    <>
+      <div className="tile" onClick={openModal}>
+        <h3 className="tile-title">{title}</h3>
+        <p className="tile-description">{description}</p>
+      </div>
+
+      {isModalOpen && (
+        <div className="modal">
+          <div className="modal-content">
+            <button className="close-button" onClick={closeModal}>
+              &times;
+            </button>
+            <h2>{title}</h2>
+            <p>{modalText}</p>
+            {modalImage && (
+              <img src={modalImage} alt={title} className="modal-image" />
+            )}
+          </div>
+        </div>
+      )}
+    </>
   );
 };
 
 export default Tile;
+
+// import React from "react";
+// import "./Tile.css";
+// import { Link } from "react-router-dom";
+
+// const Tile = ({ title, description, url }) => {
+//   return (
+//     <Link target="_blank" rel="noopener noreferrer" className="tile">
+//       <h3 className="tile-title">{title}</h3>
+//       <p className="tile-description">{description}</p>
+//     </Link>
+//   );
+// };
+
+// export default Tile;

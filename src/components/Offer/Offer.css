@@ -1,6 +1,16 @@
 .tiles-section {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 20px;
-  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
 }
+  
+
+
+/* 
+.tiles-section {
+  display: flex;
+  flex-wrap: wrap;
+  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
+  /* gap: 20px;
+  padding: 5px; */
+ 

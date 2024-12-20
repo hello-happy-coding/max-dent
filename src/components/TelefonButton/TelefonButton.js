@@ -48,33 +48,3 @@ function TelefonButton () {
 }
 
 export default TelefonButton;
-                
-    // useEffect(() => {
-    //     window.addEventListener("scroll", () => {
-    //         if(window.scrollY > 100) {
-    //             setBackToTop(true)
-    //         } else {
-    //             setBackToTop(false)
-    //         }
-    //     })
-    // }, [])
-
-//     return <div className="App">
-//         {BackToTop && (
-//             <button style={{
-//                 position: "fixed",
-//                 bottom: "450px",
-//                 right: "0px",
-//                 height: "40px",
-//                 width: "110px",
-//                 backgroundColor: "black",
-//                 color: "white",
-//                 cursor: "pointer",
-//                 border: "none",
-//                 scrollBehavior: "smooth",
-//             }}
-//             >Kontakt</button>
-//         )}
-//     </div>
-// }
-// export default TelefonButton;

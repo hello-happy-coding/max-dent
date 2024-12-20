@@ -1,6 +1,7 @@
 import React from "react";
 import "./Offer.css";
 import Tile from "../Tile/Tile";
+import "./../../assets/images/kaseta.jpg";
 
 const tilesData = [
   {
@@ -43,6 +44,12 @@ const tilesData = [
     description: "Zabieg estetyczny",
     url: "/wybielanie-zebow",
   },
+
+  {
+    title: "HIGIENIZACJA",
+    description: "Gabinetowe oczyszczanie zębów z osadu i kamienia",
+    url: "/higienizacja",
+  },
 ];
 
 const Offer = () => (
@@ -52,7 +59,8 @@ const Offer = () => (
         key={index}
         title={tile.title}
         description={tile.description}
-        url={tile.url}
+        modalText={tile.modalText}
+        // modalImage={require(`{./../../assets/images/kaseta.jpg}${tile.modalImage}`)}
       />
     ))}
   </div>
