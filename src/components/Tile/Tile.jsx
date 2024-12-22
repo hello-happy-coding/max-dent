@@ -2,14 +2,18 @@ import React, { useState } from "react";
 import "./Tile.css";
 
 const Tile = ({ title, description, modalText, modalImage }) => {
-  const [isModalOpen, setModalOpen] = useState(false);
+  const [isModalOpen, setIsModalOpen] = useState(false);
 
-  const openModal = () => setModalOpen(true);
-  const closeModal = () => setModalOpen(false);
+  const handleModal = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
+  // const openModal = () => setModalOpen(true);
+  // const closeModal = () => setModalOpen(false);
 
   return (
     <>
-      <div className="tile" onClick={openModal}>
+      <div className="tile" onClick={handleModal}>
         <h3 className="tile-title">{title}</h3>
         <p className="tile-description">{description}</p>
       </div>
@@ -17,11 +21,11 @@ const Tile = ({ title, description, modalText, modalImage }) => {
       {isModalOpen && (
         <div className="modal">
           <div className="modal-content">
-            <button className="close-button" onClick={closeModal}>
+            <button className="close-button" onClick={handleModal}>
               &times;
             </button>
             <h2>{title}</h2>
-            <p>{modalText}</p>
+            <p className="modal-text">{modalText}</p>
             {modalImage && (
               <img src={modalImage} alt={title} className="modal-image" />
             )}

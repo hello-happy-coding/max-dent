@@ -5,7 +5,7 @@ import ImageTwo from "./ImgComponents/Second/Second";
 import ImageThree from "./ImgComponents/Third/Third";
 import FirstVisit from "../FirstVisit/FirstVisit";
 import OuersServices from "../OuersServices/OuersServices";
-import Place from "../Place/place";
+import Place from "../Place/Place";
 
 function Main() {
   return (

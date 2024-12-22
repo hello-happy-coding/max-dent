@@ -37,20 +37,34 @@
 }
 
 .modal-content {
-  background: white;
+  /* background: white;
   padding: 20px;
   border-radius: 8px;
   width: 90%;
   max-width: 500px;
   text-align: center;
+  position: relative; */
+  display: flex; /* Ustawienie flexboxa */
+  align-items: center; /* Wyrównanie elementów w pionie */
+  justify-content: space-between; /* Odstęp między zdjęciem a tekstem */
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  width: 90%;
+  max-width: 700px;
+  text-align: left; /* Wyrównanie tekstu */
   position: relative;
 }
 
 .modal-image {
-  width: 100%;
+  /* width: 100%;
   height: auto;
   margin-top: 20px;
-  border-radius: 8px;
+  border-radius: 8px; */
+  max-width: 40%; /* Ustawienie maksymalnej szerokości zdjęcia */
+  height: auto; /* Zachowanie proporcji */
+  margin-right: 20px; /* Odstęp od tekstu */
+  border-radius: 8px; /* Opcjonalne zaokrąglenie rogów */
 }
 
 .close-button {
@@ -61,6 +75,12 @@
   border: none;
   font-size: 20px;
   cursor: pointer;
+}
+
+.modal-text {
+  flex: 1; /* Pozostała część dla tekstu */
+  font-size: 1rem;
+  line-height: 1.5;
 }
 
 /* .tile-title {

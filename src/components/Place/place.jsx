@@ -1,8 +1,8 @@
 import React from "react";
-import "./place.css";
+import "./Place.css";
 import Line from "../../assets/images/line.png";
 import "animate.css";
-import Facebook from "../Place/Facebook";
+import Facebook from "./Facebook";
 import InstagramIcon from "./Instagram";
 
 const Place = () => {
