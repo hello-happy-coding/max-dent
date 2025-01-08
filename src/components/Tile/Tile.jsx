@@ -20,11 +20,11 @@ const Tile = ({ title, description, modalText, modalImage }) => {
 
       {isModalOpen && (
         <div className="modal">
-          <div className="modal-content">
+          <div className="modal-content modal-background ">
             <button className="close-button" onClick={handleModal}>
               &times;
             </button>
-            <h2>{title}</h2>
+            <h2 className="modal-heading">{title}</h2>
             <p className="modal-text">{modalText}</p>
             {modalImage && (
               <img src={modalImage} alt={title} className="modal-image" />
