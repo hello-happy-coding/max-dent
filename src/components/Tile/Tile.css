@@ -49,7 +49,6 @@
   text-align: left; /* Wyrównanie tekstu */
   position: relative;
   background-color: rgba(255, 255, 255, 0.7);
-  background-image: url('../../assets/images/szczotka.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;

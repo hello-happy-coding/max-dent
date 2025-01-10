@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Tile.css";
 
-const Tile = ({ title, description, modalText }) => {
+const Tile = ({ title, description, modalText, imagePath }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   const handleModal = () => {
@@ -20,7 +20,12 @@ const Tile = ({ title, description, modalText }) => {
 
       {isModalOpen && (
         <div className="modal">
-          <div className="modal-content">
+          <div
+            className="modal-content"
+            style={{
+              backgroundImage: imagePath,
+            }}
+          >
             <button className="close-button" onClick={handleModal}>
               &times;
             </button>
