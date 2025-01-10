@@ -1,6 +1,5 @@
 import React from "react";
 import "./Place.css";
-import Line from "../../assets/images/line.png";
 import "animate.css";
 import Facebook from "./Facebook";
 import InstagramIcon from "./Instagram";
@@ -8,14 +7,6 @@ import InstagramIcon from "./Instagram";
 const Place = () => {
   return (
     <div>
-      <h3 id="umów się na wizytę" className="appointment">
-        MASZ PYTANIA?
-        <br />
-        CHCESZ UMÓWIĆ SIĘ NA WIZYTĘ?
-        <br />
-        ZAPRASZAMY DO KONTAKTU.
-      </h3>
-      <img src={Line} alt="line" className="line-third" />
       <div className="Information">
         <div className="Olkusz">
           <div className="city">OLKUSZ</div>

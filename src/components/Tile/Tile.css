@@ -42,10 +42,6 @@
   grid-template-columns: [first] 30% [line2] 70%;
   align-items: start; /* Wyrównanie elementów w pionie */
   justify-content: space-between; /* Odstęp między zdjęciem a tekstem */
-  /* background-image: url('../../assets/images/szczotka.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; */
   padding: 20px;
   border-radius: 8px;
   width: 90%;
@@ -53,9 +49,7 @@
   text-align: left; /* Wyrównanie tekstu */
   position: relative;
   background-color: rgba(255, 255, 255, 0.7);
-}
-
-.modal-background {  background-image: url('../../assets/images/szczotka.jpg');
+  background-image: url('../../assets/images/szczotka.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -70,14 +64,6 @@
   height: 100%;
   background-color: rgba(255, 255, 255, 0.812); /* Biała nakładka z przezroczystością */
  }
- 
-
-/* .modal-image {
-  max-width: 40%; /* Ustawienie maksymalnej szerokości zdjęcia */
-  /* height: auto; Zachowanie proporcji */
-  /* border-radius: 8px; Opcjonalne zaokrąglenie rogów */
-  /* opacity: 0.33; */
-/* } */
 
 .close-button {
   position: absolute;
@@ -105,28 +91,3 @@
   z-index: 2;
   font-weight: bold;
 }
-
-/* .tile-title {
-    font-size: 1.2rem;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-
-  .tile-description {
-    font-size: 0.9rem;
-    color: #777;
-  }
-
-  .tile {
-    background-color: #f4f4f4;
-    border-radius: 8px; 
-    padding: 20px;
-    text-align: center;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .tile:hover {
-    background-color: orange;
-    transform: scale(1.05);
-  } */

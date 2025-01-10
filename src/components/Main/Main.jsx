@@ -6,6 +6,7 @@ import ImageThree from "./ImgComponents/Third/Third";
 import FirstVisit from "../FirstVisit/FirstVisit";
 import OuersServices from "../OuersServices/OuersServices";
 import Place from "../Place/Place";
+import ContactForm from "../ContactForm/ContactForm";
 
 function Main() {
   return (
@@ -15,6 +16,7 @@ function Main() {
       <ImageTwo />
       <OuersServices />
       <ImageThree />
+      <ContactForm />
       <Place />
     </div>
   );
