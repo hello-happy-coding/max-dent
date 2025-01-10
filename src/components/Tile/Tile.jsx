@@ -24,6 +24,8 @@ const Tile = ({ title, description, modalText, imagePath }) => {
             className="modal-content"
             style={{
               backgroundImage: imagePath,
+              backgroundColor: "rgba(238, 232, 232, 0.77)", // Czarny kolor z przezroczystością 50%
+              backgroundBlendMode: "overlay",
             }}
           >
             <button className="close-button" onClick={handleModal}>
@@ -39,18 +41,3 @@ const Tile = ({ title, description, modalText, imagePath }) => {
 };
 
 export default Tile;
-
-// import React from "react";
-// import "./Tile.css";
-// import { Link } from "react-router-dom";
-
-// const Tile = ({ title, description, url }) => {
-//   return (
-//     <Link target="_blank" rel="noopener noreferrer" className="tile">
-//       <h3 className="tile-title">{title}</h3>
-//       <p className="tile-description">{description}</p>
-//     </Link>
-//   );
-// };
-
-// export default Tile;

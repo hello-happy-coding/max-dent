@@ -1,70 +1,95 @@
-/* Reset stylów */
-body, input, textarea, button {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Styl formularza */
-  body {
-    font-family: Arial, sans-serif;
-    background-color: #f8f9fa;
-    padding: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-  }
-  
-  .contact-form {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    width: 100%;
-    max-width: 400px;
-  }
-  
-  .form-group {
-    margin-bottom: 15px;
-  }
-  
-  label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
-    color: #333;
-  }
-  
-  input, textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    font-size: 1rem;
-  }
-  
-  input:focus, textarea:focus {
-    border-color: #007bff;
-    outline: none;
-  }
-  
-  textarea {
-    resize: none;
-  }
-  
-  .submit-btn {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    font-size: 1rem;
-    width: 100%;
-  }
-  
-  .submit-btn:hover {
-    background-color: #0056b3;
-  }
-  
+.form-container {
+  background-color: #ffffff; /* Jasno szare tło formularza */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Cień ramki */
+  padding: 20px;
+  max-width: 400px;
+  margin: 20px 120px;
+  display: flex;
+  flex-direction: column; /* Ustawienie elementów w kolumnie */
+  align-items: center; /* Wyśrodkowanie zawartości w poziomie */
+}
+
+.form-group {
+  width: 100%; /* Rozciągnięcie pól na pełną szerokość kontenera */
+  display: flex;
+  flex-direction: column; /* Ustawienie etykiety nad polem */
+  margin-bottom: 15px; /* Odstęp między grupami */
+}
+
+.form-group label {
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.form-group input,
+.form-group textarea {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  background-color: #f9f9f9; /* Delikatne tło dla inputów */
+  width: 100%; /* Pełna szerokość pól */
+  box-sizing: border-box; /* Uwzględnienie paddingu w szerokości */
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #ff9800; /* Pomarańczowa obwódka na focus */
+  outline: none;
+}
+
+.submit-btn {
+  background-color: #ff9800; /* Pomarańczowy kolor przycisku */
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 15px; /* Odstęp od ostatniego pola */
+  align-self: center; /* Wyśrodkowanie przycisku */
+}
+
+.submit-btn:hover {
+  background-color: #e68a00; /* Ciemniejszy pomarańcz na hover */
+}
+
+.form-image-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start; /* Dopasowanie elementów do góry */
+  gap: 20px; /* Odstęp między formularzem a obrazem */
+  max-width: 1000px; /* Maksymalna szerokość kontenera */
+  margin: 0 auto; /* Wyśrodkowanie kontenera na stronie */
+}
+
+.form-container {
+  flex: 1; /* Formularz zajmuje większą część dostępnej przestrzeni */
+  max-width: 400px; /* Ograniczenie szerokości formularza */
+}
+
+.form-image {
+  flex: 1; /* Obraz zajmuje równą przestrzeń */
+  display: flex;
+  justify-content: center; /* Wyśrodkowanie obrazu w pionie */
+  align-items: center;
+}
+
+.form-image img {
+  max-width: 400px; /* Dopasowanie obrazu do kontenera */
+  height: 300px;
+  border-radius: 8px; /* Zaokrąglone rogi dla lepszego wyglądu */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtelny cień */
+}
+
+.form-image-container {
+  display: flex; /* Układ elementów w wierszu */
+  justify-content: space-between; /* Odstępy między formularzem a obrazem */
+  align-items: flex-start; /* Wyrównanie do góry */
+  gap: 20px; /* Przestrzeń między formularzem a obrazem */
+  max-width: 1000px; /* Maksymalna szerokość kontenera */
+  margin: 0 auto; /* Wyśrodkowanie kontenera na stronie */
+}
