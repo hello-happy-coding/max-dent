@@ -18,7 +18,7 @@ const ContactForm = () => {
       </div>
 
       <form
-        action="https://formsubmit.io/send/ewelinapuz@gmail.com"
+        action="https://formsubmit.co/ewelinapuz@gmail.com"
         method="POST"
         class="contact-form"
       >

@@ -38,8 +38,6 @@
 
 .modal-content {
   display: grid; /* Ustawienie flexboxa */
-  grid-template-rows: 30%;
-  grid-template-columns: [first] 30% [line2] 70%;
   align-items: start; /* Wyrównanie elementów w pionie */
   justify-content: space-between; /* Odstęp między zdjęciem a tekstem */
   padding: 20px;
@@ -75,14 +73,11 @@
 }
 
 .modal-text {
-  font-size: 0.6rem;
   line-height: 1.5;
   column-count: 3;
   column-gap: 20px;
   text-align: justify;
-  margin-top: 80px;
-  margin-right: 20px;
-  z-index: 2;
+  margin: 30px
 }
 
 .modal-heading {
