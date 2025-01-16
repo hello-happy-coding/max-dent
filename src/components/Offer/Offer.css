@@ -1,8 +1,11 @@
 .tiles-section {
-  display: flex;
+  display: inline-flex;
   flex-wrap: wrap;
   gap: 16px;
-  flex-direction: row;
+  justify-content: center; /* Wyrównuje kafelki w poziomie */
+  align-items: center;     /* Wyrównuje kafelki w pionie */
+  width: 100%;             /* Zapewnia, że kontener zajmuje całą dostępną szerokość */
+  height: 100vh; 
 }
   
 

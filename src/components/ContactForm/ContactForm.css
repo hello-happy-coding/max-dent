@@ -7,9 +7,10 @@
   max-width: 400px;
   margin: 20px 120px;
   display: flex;
-  flex-direction: column; /* Ustawienie elementów w kolumnie */
+  flex-direction: column;/* Ustawienie elementów w kolumnie */
   align-items: center; /* Wyśrodkowanie zawartości w poziomie */
-}
+  flex: 1; /* Formularz będzie zajmował drugą połowę przestrzeni */
+ }
 
 .form-group {
   width: 100%; /* Rozciągnięcie pól na pełną szerokość kontenera */
@@ -32,12 +33,25 @@
   background-color: #f9f9f9; /* Delikatne tło dla inputów */
   width: 100%; /* Pełna szerokość pól */
   box-sizing: border-box; /* Uwzględnienie paddingu w szerokości */
+  font-family: 'Times New Roman', sans-serif; /* Explicit font family */
+  font-weight: 400; /* Regular weight */
+  letter-spacing: 0.5px; /* Improve readability */
 }
 
 .form-group input:focus,
 .form-group textarea:focus {
   border-color: #ff9800; /* Pomarańczowa obwódka na focus */
   outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #999; /* Default placeholder color */
+  font-style: italic; /* Make it look like a hint */
+  font-size: 16px; /* Adjust font size */
+  font-family: 'Times New Roman', sans-serif; /* Explicit font family */
+  font-weight: 400; /* Regular weight */
+  letter-spacing: 0.5px; /* Improve readability */
 }
 
 .submit-btn {
@@ -57,39 +71,22 @@
   background-color: #e68a00; /* Ciemniejszy pomarańcz na hover */
 }
 
-.form-image-container {
+.container {
   display: flex;
-  justify-content: space-between;
-  align-items: flex-start; /* Dopasowanie elementów do góry */
-  gap: 20px; /* Odstęp między formularzem a obrazem */
-  max-width: 1000px; /* Maksymalna szerokość kontenera */
-  margin: 0 auto; /* Wyśrodkowanie kontenera na stronie */
-}
-
-.form-container {
-  flex: 1; /* Formularz zajmuje większą część dostępnej przestrzeni */
-  max-width: 400px; /* Ograniczenie szerokości formularza */
+  justify-content: center; /* Wyrównanie zawartości kontenera w poziomie */
+  align-items: center;     /* Wyrównanie zawartości kontenera w pionie */
+  gap: 20px;               /* Odstęp między formularzem a zdjęciem */
 }
 
 .form-image {
-  flex: 1; /* Obraz zajmuje równą przestrzeń */
-  display: flex;
-  justify-content: center; /* Wyśrodkowanie obrazu w pionie */
-  align-items: center;
+  width: 300px;
+  height: 400px;
+  object-fit: cover; /* Wypełnia przestrzeń zdjęcia, zachowując proporcje */
+  border-radius: 8px; /* Zaokrąglenie rogów zdjęcia */
+  flex: 1; /* Ustala, że zdjęcie będzie miało połowę dostępnej przestrzeni */
+  max-width: 300px; /* Maksymalna szerokość zdjęcia */
 }
 
-.form-image img {
-  max-width: 400px; /* Dopasowanie obrazu do kontenera */
-  height: 300px;
-  border-radius: 8px; /* Zaokrąglone rogi dla lepszego wyglądu */
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Subtelny cień */
-}
-
-.form-image-container {
-  display: flex; /* Układ elementów w wierszu */
-  justify-content: space-between; /* Odstępy między formularzem a obrazem */
-  align-items: flex-start; /* Wyrównanie do góry */
-  gap: 20px; /* Przestrzeń między formularzem a obrazem */
-  max-width: 1000px; /* Maksymalna szerokość kontenera */
-  margin: 0 auto; /* Wyśrodkowanie kontenera na stronie */
+.container-header {
+margin-left: 120px;
 }
