@@ -16,14 +16,14 @@ const Place = () => {
           <div>669 000 700</div>
           <div>ark.zurek@gmail.com</div>
         </div>
-        <div className="Katowice">
+        {/* <div className="Katowice">
           <div className="city">KATOWICE</div>
           <div className="streat">ul. Rolna 17/1, Katowice</div>
           <div>Środa, Piątek</div>
           <div className="houer">10-18</div>
           <div>32 747 27 27</div>
           <div>dental.care@gmail.com</div>
-        </div>
+        </div> */}
         <div className="fb-icon">
           <div className="socialText">ZNAJDZIESZ NAS NA:</div>
           <Facebook />
