@@ -2,14 +2,12 @@
     margin: 120px;
 }
 
-.title-first-visit {
-    
-}
 
 .text-first-visit-one {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
+    font-weight: none;
 }
 
  .line {

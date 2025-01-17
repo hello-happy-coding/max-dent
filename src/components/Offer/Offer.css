@@ -5,16 +5,10 @@
   justify-content: center; /* Wyrównuje kafelki w poziomie */
   align-items: center;     /* Wyrównuje kafelki w pionie */
   width: 100%;             /* Zapewnia, że kontener zajmuje całą dostępną szerokość */
-  height: 100vh; 
+  height: 50vh; 
 }
   
 
 
-/* 
-.tiles-section {
-  display: flex;
-  flex-wrap: wrap;
-  /* grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); */
-  /* gap: 20px;
-  padding: 5px; */
+
  

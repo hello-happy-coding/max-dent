@@ -13,7 +13,7 @@ const Place = () => {
           <div className="streat">ul. Nowa 13, Olkusz</div>
           <div>Poniedziałek, Wtorek, Czwartek</div>
           <div className="houer">11-18</div>
-          <div>500 900 500</div>
+          <div>669 000 700</div>
           <div>ark.zurek@gmail.com</div>
         </div>
         <div className="Katowice">
@@ -21,7 +21,7 @@ const Place = () => {
           <div className="streat">ul. Rolna 17/1, Katowice</div>
           <div>Środa, Piątek</div>
           <div className="houer">10-18</div>
-          <div>500 900 500</div>
+          <div>32 747 27 27</div>
           <div>dental.care@gmail.com</div>
         </div>
         <div className="fb-icon">

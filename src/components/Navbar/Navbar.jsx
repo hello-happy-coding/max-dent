@@ -45,7 +45,7 @@ function Navbar() {
               className="number-link link"
               onClick={(e) => handleSmoothScroll(e, "umów się na wizytę")}
             >
-              <b> +48 500 900 500</b>
+              <b> +48 669 000 700</b>
             </a>
           </li>
         </ul>

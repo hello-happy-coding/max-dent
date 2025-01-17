@@ -35,7 +35,7 @@
 
 .city {
     margin-bottom: 20px;
-    color: rgb(116, 109, 109);
+    color: #d67500;;
 }
 
 .location {
@@ -54,5 +54,5 @@
 .socialText {
     margin-top: 75px; 
     margin-bottom: 30px;
-    color: rgb(116, 109, 109);
+    color: #d67500;;
 }

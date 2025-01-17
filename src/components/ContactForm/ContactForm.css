@@ -5,7 +5,8 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Cień ramki */
   padding: 20px;
   max-width: 400px;
-  margin: 20px 120px;
+  margin-top: 20px;
+  margin-bottom: 20px;
   display: flex;
   flex-direction: column;/* Ustawienie elementów w kolumnie */
   align-items: center; /* Wyśrodkowanie zawartości w poziomie */
@@ -59,7 +60,7 @@
   color: #ffffff;
   border: none;
   border-radius: 4px;
-  padding: 10px 15px;
+  padding: 20px 50px;
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
@@ -75,12 +76,12 @@
   display: flex;
   justify-content: center; /* Wyrównanie zawartości kontenera w poziomie */
   align-items: center;     /* Wyrównanie zawartości kontenera w pionie */
-  gap: 20px;               /* Odstęp między formularzem a zdjęciem */
+  gap: 200px;               /* Odstęp między formularzem a zdjęciem */
 }
 
 .form-image {
   width: 300px;
-  height: 400px;
+  height: 100%;
   object-fit: cover; /* Wypełnia przestrzeń zdjęcia, zachowując proporcje */
   border-radius: 8px; /* Zaokrąglenie rogów zdjęcia */
   flex: 1; /* Ustala, że zdjęcie będzie miało połowę dostępnej przestrzeni */
