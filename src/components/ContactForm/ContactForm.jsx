@@ -73,9 +73,6 @@ const ContactForm = () => {
           </div>
         </div>
       </form>
-      {/* <div className="form-image">
-        <img src={CaffeImage} alt="Caffe" />
-      </div> */}
     </div>
   );
 };
