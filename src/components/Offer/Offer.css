@@ -5,7 +5,10 @@
   justify-content: center; /* Wyrównuje kafelki w poziomie */
   align-items: center;     /* Wyrównuje kafelki w pionie */
   width: 100%;             /* Zapewnia, że kontener zajmuje całą dostępną szerokość */
-  height: 50vh; 
+  height: 50%; 
+
+  @media (min-width: 678px) {
+  }         
 }
   
 
