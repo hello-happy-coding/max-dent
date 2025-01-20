@@ -56,3 +56,65 @@
     margin-bottom: 30px;
     color: #d67500;;
 }
+
+
+.Information {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  
+  .city {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #d67500;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item .icon {
+    color: #d67500;
+    font-size: 1.2rem;
+    margin-right: 10px;
+  }
+  
+  .schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    font-size: 1rem;
+  }
+  
+  .schedule-table th,
+  .schedule-table td {
+    padding: 12px;
+    border: 1px solid #ddd;
+    text-align: left;
+  }
+  
+  .schedule-table th {
+    background-color: #000000;
+    color: #ffffff;
+  }
+  
+  .schedule-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .schedule-table tr:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .schedule-table td {
+    color: #333333;
+  }
+  

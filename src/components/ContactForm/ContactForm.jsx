@@ -5,8 +5,8 @@ import CaffeImage from "../../assets/images/caffe.jpg";
 
 const ContactForm = () => {
   return (
-    <div>
-      <div className="container-header">
+    <div className="contact">
+      <div>
         <h3 id="umów się na wizytę" className="appointment">
           MASZ PYTANIA?
           <br />
@@ -17,11 +17,7 @@ const ContactForm = () => {
         <img src={Line} alt="line" className="line-third" />
       </div>
 
-      <form
-        action="https://formsubmit.co/ewelinapuz@gmail.com"
-        method="POST"
-        class="contact-form"
-      >
+      <form action="https://formsubmit.co/ewelinapuz@gmail.com" method="POST">
         <div className="container">
           <div className="container-image">
             <img src={CaffeImage} alt="cafe" className="form-image" />
