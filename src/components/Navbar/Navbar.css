@@ -8,6 +8,10 @@ body {
 
 .white-logo {
 height: 4rem;
+
+@media (min-width: 678px) {
+  width: 20%;
+} 
 }
 
 .nav {
@@ -17,6 +21,7 @@ height: 4rem;
   align-items: center;
   gap: 2rem;
   padding: 0 2rem;
+
 }
 
 .default-link{
@@ -27,6 +32,7 @@ height: 4rem;
 .number-link {
   background-color: black;
   color: white;
+
 }
 
 .nav-list {
