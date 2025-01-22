@@ -1,4 +1,4 @@
-/* .image {
+.image {
     position: relative;
     height: 100vh;
 }
@@ -46,11 +46,11 @@
       padding: 0.5rem; 
       line-height: 1.5; 
     }
-  } */
+  }
 
-  .image {
+  /* .image {
   position: relative;
-  height: 100vh; /* Domyślnie 100vh na większych ekranach */
+  height: 100vh;
 }
 
 .content {
@@ -59,7 +59,7 @@
   justify-content: center;
   position: absolute;
   height: 100%;
-  width: 100vw; /* Poprawka dla pełnej szerokości */
+  width: 100vh;
 }
 
 .content span.img-text {
@@ -76,7 +76,7 @@
 
 @media (max-width: 768px) {
   .image {
-    height: 50vh; /* Wysokość zmniejszona na tabletach */
+    height: 50vh; 
   }
 
   .content span.img-text {
@@ -92,7 +92,7 @@
 
 @media (max-width: 480px) {
   .image {
-    height: 30vh; /* Wysokość zmniejszona na urządzeniach mobilnych */
+    height: 30vh; 
   }
 
   .content span.img-text {
@@ -104,4 +104,4 @@
     padding: 0.5rem; 
     line-height: 1.5; 
   }
-}
+} */
