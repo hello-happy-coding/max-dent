@@ -4,11 +4,27 @@
 
 
 .text-first-visit-one {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    font-weight: none;
-}
+    column-count: 3; /* Podział na 3 kolumny dla większych ekranów */
+    column-gap: 20px; /* Odstęp między kolumnami */
+    font-weight: normal; /* Poprawienie wartości font-weight */
+    text-align: start;
+  }
+  
+  @media (max-width: 768px) {
+    .text-first-visit-one {
+      column-count: 2; /* Zmniejszenie do 2 kolumn na tabletach */
+      column-gap: 15px; /* Mniejszy odstęp między kolumnami */
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .text-first-visit-one {
+      column-count: 1; /* Jedna kolumna na małych ekranach */
+      column-gap: 10px; /* Minimalny odstęp dla estetyki */
+      text-align: start;
+    }
+  }
+  
 
  .line {
     width: 50%;
