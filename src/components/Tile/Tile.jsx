@@ -8,9 +8,6 @@ const Tile = ({ title, description, modalText, imagePath }) => {
     setIsModalOpen(!isModalOpen);
   };
 
-  // const openModal = () => setModalOpen(true);
-  // const closeModal = () => setModalOpen(false);
-
   return (
     <>
       <div className="tile" onClick={handleModal}>

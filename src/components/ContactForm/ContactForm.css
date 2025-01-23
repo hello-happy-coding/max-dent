@@ -1,6 +1,5 @@
 .contact {
-  margin-left: 120px;
-  margin-right: 120px;
+  margin: 20px
 }
 .form-container {
   background-color: #ffffff; /* Jasno szare tło formularza */
@@ -15,10 +14,6 @@
   width: 100%;
   height: 500px;
   
-
-  @media (min-width: 678px) {
-    width: 50%;
-  } 
  }
 
 .form-group {
@@ -74,9 +69,7 @@
   transition: background-color 0.3s ease;
   margin-top: 15px; /* Odstęp od ostatniego pola */
   align-self: center; /* Wyśrodkowanie przycisku */
-
-  @media (min-width: 678px) {
-  } 
+ 
 }
 
 .submit-btn:hover {
@@ -86,27 +79,32 @@
 .container {
   display: flex;
    gap: 48px; 
-   flex-direction: column;
+   flex-direction: column;           
+}
 
-   @media (min-width: 678px) {
-    flex-direction: row;
-  }              
+ .container-image {
+  width: 50%;
+ }
+
+@media (min-width: 768px) {
+  .contact {
+    margin-left: 120px;
+    margin-right: 120px;
+  }
 }
 
 .form-image {
-  width: 100%;
+  display: none;
+  /* width: 50%;
   object-fit: cover;
-  border-radius: 8px;
-  height: 500px;
-  
-
+  border-radius: 8px; */
 }
 
-.container-image {
-  width: 100%;
-
-  @media (min-width: 678px) {
-    width: 50%;
-  } 
-
+@media (min-width: 768px) {
+    .form-image {
+      width: 100%;
+      object-fit: cover;
+      border-radius: 8px;
+      height: 500px; 
+    }
 }

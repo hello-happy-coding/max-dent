@@ -1,5 +1,5 @@
 .containerService {
-    margin: 120px;
+    margin: 20px;
 }
 
 .line {
@@ -7,6 +7,8 @@
     margin-bottom: 20px;
 }
 
-.head-text {
-    padding-top: 20px;
-}
+@media (min-width: 768px) {
+    .containerService {
+        margin: 120px;
+    }
+    }

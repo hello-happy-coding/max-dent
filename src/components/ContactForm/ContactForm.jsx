@@ -6,17 +6,14 @@ import CaffeImage from "../../assets/images/caffe.jpg";
 const ContactForm = () => {
   return (
     <div className="contact">
-      <div>
-        <h3 id="umów się na wizytę" className="appointment">
-          MASZ PYTANIA?
-          <br />
-          CHCESZ UMÓWIĆ SIĘ NA WIZYTĘ?
-          <br />
-          ZAPRASZAMY DO KONTAKTU.
-        </h3>
-        <Divider />
-      </div>
-
+      <h3 id="umów się na wizytę">
+        MASZ PYTANIA?
+        <br />
+        CHCESZ UMÓWIĆ SIĘ NA WIZYTĘ?
+        <br />
+        ZAPRASZAMY DO KONTAKTU.
+      </h3>
+      <Divider />
       <form action="https://formsubmit.co/ewelinapuz@gmail.com" method="POST">
         <div className="container">
           <div className="container-image">

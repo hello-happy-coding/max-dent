@@ -6,9 +6,7 @@ import Divider from "../Divider/Divider";
 const OuersService = () => {
   return (
     <div className="containerService">
-      <h3 id="nasza-oferta" className="head-text">
-        NASZA OFERTA
-      </h3>
+      <h3 id="nasza-oferta">NASZA OFERTA</h3>
       <Divider />
       <Offer />
     </div>

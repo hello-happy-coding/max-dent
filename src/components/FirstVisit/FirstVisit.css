@@ -1,28 +1,31 @@
-.contener-first-visit {
-    margin: 120px;
+.title-first-visit {
+  margin-left: 20px;
 }
 
-
 .text-first-visit-one {
-    column-count: 3; /* Podział na 3 kolumny dla większych ekranów */
-    column-gap: 20px; /* Odstęp między kolumnami */
-    font-weight: normal; /* Poprawienie wartości font-weight */
+    column-count: 2; 
+    column-gap: 10px; 
+    font-weight: normal;
     text-align: start;
-    margin-block-start: 0;
-    
+    margin: 30px;
   }
   
-  @media (max-width: 768px) {
+  @media (min-width: 768px) {
+    .contener-first-visit {
+        margin: 120px;
+    } 
+    }
+
+  @media (min-width: 768px) {
     .text-first-visit-one {
-      column-count: 2; /* Zmniejszenie do 2 kolumn na tabletach */
-      column-gap: 15px; /* Mniejszy odstęp między kolumnami */
+      column-count: 3;
+      column-gap: 15px;
+      margin-top: 100px
     }
   }
   
-  @media (max-width: 480px) {
+  @media (min-width: 1200px) {
     .text-first-visit-one {
-      column-count: 1; /* Jedna kolumna na małych ekranach */
-      column-gap: 10px; /* Minimalny odstęp dla estetyki */
       text-align: start;
     }
   }
