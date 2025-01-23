@@ -7,18 +7,37 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    position: absolute;
-    height: 150vh;
-    width: 100vh;
-    opacity: 0.33;
-    
 }
 
-.content .img-text {
-    /* text-transform: capitalize; */
-    color: rgb(0, 0, 0);
+  .content span.img-text {
+    text-align: center;
+    font-size: 1rem; 
+    letter-spacing: 2px;  
+    padding: 0.5rem; 
+    line-height: 1.5; 
+  }
+
+
+@media (min-width: 768px) {
+  .content span.img-text {
+    font-size: 1.2rem; 
+    letter-spacing: 3px;
+    line-height: 1.8; 
+  }
+}
+
+@media (min-width: 1028px) {
+.content span.img-text {
     padding: 1rem;
     font-size: 1.5rem;
-    letter-spacing: 10px;
-    text-align: center;
+    letter-spacing: 5px; 
+    line-height: 2;
 }
+}
+
+
+
+.parallax-content {
+    height: 100%;
+}
+

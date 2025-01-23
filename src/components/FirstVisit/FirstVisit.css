@@ -8,6 +8,8 @@
     column-gap: 20px; /* Odstęp między kolumnami */
     font-weight: normal; /* Poprawienie wartości font-weight */
     text-align: start;
+    margin-block-start: 0;
+    
   }
   
   @media (max-width: 768px) {

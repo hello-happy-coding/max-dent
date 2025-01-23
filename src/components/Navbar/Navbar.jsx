@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import logow from "../../assets/logo/logow.svg";
 import "./Navbar.css";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -31,7 +33,7 @@ function Navbar() {
           aria-label="Toggle navigation"
           onClick={toggleMenu}
         >
-          ☰
+          <FontAwesomeIcon icon={faBars} />
         </button>
         <ul
           className={`nav-list animate__animated animate__fadeIn ${

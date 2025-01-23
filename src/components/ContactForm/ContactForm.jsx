@@ -1,5 +1,5 @@
 import React from "react";
-import Line from "../../assets/images/line.png";
+import Divider from "../Divider/Divider";
 import "./ContactForm.css";
 import CaffeImage from "../../assets/images/caffe.jpg";
 
@@ -14,7 +14,7 @@ const ContactForm = () => {
           <br />
           ZAPRASZAMY DO KONTAKTU.
         </h3>
-        <img src={Line} alt="line" className="line-third" />
+        <Divider />
       </div>
 
       <form action="https://formsubmit.co/ewelinapuz@gmail.com" method="POST">

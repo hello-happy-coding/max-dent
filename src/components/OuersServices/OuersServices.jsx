@@ -1,7 +1,7 @@
 import React from "react";
 import "./OuersServices.css";
-import Break from "../../assets/images/line.png";
 import Offer from "../Offer/Offer";
+import Divider from "../Divider/Divider";
 
 const OuersService = () => {
   return (
@@ -9,7 +9,7 @@ const OuersService = () => {
       <h3 id="nasza-oferta" className="head-text">
         NASZA OFERTA
       </h3>
-      <img src={Break} alt="line" className="line" />
+      <Divider />
       <Offer />
     </div>
   );
