@@ -14,7 +14,7 @@ const ContactForm = () => {
         ZAPRASZAMY DO KONTAKTU.
       </h3>
       <Divider />
-      <form action="https://formsubmit.co/ewelinapuz@gmail.com" method="POST">
+      <form action="https://formsubmit.co/arkzurek@gmail.com" method="POST">
         <div className="container">
           <div className="container-image">
             <img src={CaffeImage} alt="cafe" className="form-image" />
