@@ -1,14 +1,13 @@
 import React from "react";
 import { Parallax } from "react-parallax";
-import Tools from "../../../../assets/images/one.jpg";
+import Mobilka from "../../../../assets/images/mobilka.jpg";
 import "../First/First.css";
 
 const ImageOne = () => (
   <Parallax
     className="image animate__animated animate__fadeIn"
-    bgImage={Tools}
+    bgImage={Mobilka}
     strength={300}
-    // contentClassName="parallax-content"
   >
     <div className="content">
       <span className="img-text animate__animated animate__fadeIn">

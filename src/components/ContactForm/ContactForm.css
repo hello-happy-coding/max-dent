@@ -2,8 +2,6 @@
   margin: 20px
 }
 
-
-
 .form-group {
   width: 100%; /* Rozciągnięcie pól na pełną szerokość kontenera */
   display: flex;
@@ -79,18 +77,23 @@
     margin-left: 120px;
     margin-right: 120px;
   }
+
+  .container { 
+     flex-direction: row;           
+  }
 }
 
 .form-image {
   display: none;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 8px;
+  height: 500px;
 }
 
 @media (min-width: 768px) {
     .form-image {
-      width: 50%;
-      object-fit: cover;
-      border-radius: 8px;
-      height: 500px; 
+      display: block; 
     }
 }
 
@@ -111,6 +114,6 @@
  @media (min-width: 768px) {
   .form-container {
     width: 50%;
-    height: 500px; 
+    height: 500px;  
    }
 }
