@@ -19,7 +19,7 @@ const Place = () => {
 
         <div className="contact-item">
           <FaEnvelope className="icon" />
-          <span>ark.zurek@gmail.com</span>
+          <span>arkzurek@gmail.com</span>
         </div>
 
         <div className="contact-item">
