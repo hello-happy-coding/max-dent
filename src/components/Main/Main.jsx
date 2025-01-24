@@ -4,7 +4,7 @@ import ImageTwo from "./ImgComponents/Second/Second";
 import ImageThree from "./ImgComponents/Third/Third";
 import FirstVisit from "../FirstVisit/FirstVisit";
 import OuersServices from "../OuersServices/OuersServices";
-// import Place from "../Place/Place";
+import Place from "../Place/Place";
 import ContactForm from "../ContactForm/ContactForm";
 
 function Main() {
@@ -16,7 +16,7 @@ function Main() {
       <OuersServices />
       <ImageThree />
       <ContactForm />
-      {/* <Place /> */}
+      <Place />
     </div>
   );
 }

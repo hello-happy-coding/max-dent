@@ -9,7 +9,7 @@
 
   .content span.img-text {
     text-align: center;
-    font-size: 1rem; 
+    font-size: 1.6rem; 
     letter-spacing: 2px;  
     padding: 0.5rem; 
     line-height: 1.5;
@@ -27,9 +27,6 @@
     }
   }
    
-
-
-
 @media (min-width: 768px) {
   .content span.img-text {
     font-size: 1.2rem; 

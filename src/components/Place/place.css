@@ -1,120 +1,132 @@
-.appointment {
-    margin-top: 50px;
-    line-height: 1.5;
-    padding-top: 20px;
-}
-
-.line-third {
-    width: 50%;
-    margin-bottom: 20px;
-}
-
-.ig {
-    width: 30px;
-    height: 30px;
-    margin-left: 20px;
-}
-
 .Information {
-    background-color: lightgray;
-    display: flex;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  margin: 40px auto;
 }
 
-.Olkusz {
-     margin: 100px;  
+/* Lewa sekcja (Olkusz + kontakt + tabela) */
+.left-section {
+  flex: 1;
+  text-align: left;
 }
 
-.Katowice {
-     margin: 100px;
-}
-
-.fb-icon {
-    margin-top: 20px;
-    margin-left: 100px;
+/* Prawa sekcja (Znajdziesz nas na + ikony) */
+.right-section {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  gap: 10px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .city {
-    margin-bottom: 20px;
-    color: #d67500;;
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #d67500;
+  text-transform: uppercase;
 }
 
-.location {
-    width: 20px;
-    height: 20px;
+.contact-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
 }
 
-.streat {
-    margin-bottom: 10px;
+.contact-item .icon {
+  font-size: 1.5rem;
+  color: #333;
 }
 
-.houer {
-    margin-bottom: 10px;
+.schedule-table {
+  width: 50%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-size: 1rem;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.schedule-table th {
+  background: #d67500;
+  color: #ffffff;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  padding: 12px;
+  text-align: center;
+}
+
+.schedule-table td {
+  padding: 12px;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+}
+
+.schedule-table tr:nth-child(even) {
+  background-color: #e0e0e0;
+}
+
+.schedule-table tr:hover {
+  background-color: #d0d0d0;
+  transition: 0.3s ease-in-out;
 }
 
 .socialText {
-    margin-top: 75px; 
-    margin-bottom: 30px;
-    color: #d67500;;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #d67500;
+  text-align: right;
 }
 
-
-.Information {
-    background-color: #ffffff;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
-  }
-  
-  .city {
-    font-size: 1.5rem;
-    font-weight: bold;
-    color: #d67500;
-    margin-bottom: 10px;
-    text-transform: uppercase;
-  }
-  
-  .contact-item {
-    display: flex;
+/* RESPONSYWNOŚĆ */
+@media (min-width: 768px) {
+  .Information {
+    flex-direction: row;
     align-items: center;
-    margin-bottom: 10px;
+    text-align: center;
+    padding-left: 120px;
   }
-  
-  .contact-item .icon {
-    color: #d67500;
-    font-size: 1.2rem;
-    margin-right: 10px;
+
+  .left-section {
+    margin-bottom: 20px;
+    max-width: 40%;
   }
-  
+
+  .right-section {
+    align-items: center;
+  }
+
   .schedule-table {
     width: 100%;
-    border-collapse: collapse;
-    margin-top: 20px;
+  }
+
+  .city {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 480px) {
+  .schedule-table {
+    width: 100%;
+    font-size: 0.9rem;
+  }
+
+  .contact-item {
     font-size: 1rem;
   }
-  
-  .schedule-table th,
-  .schedule-table td {
-    padding: 12px;
-    border: 1px solid #ddd;
-    text-align: left;
+
+  .contact-item .icon {
+    font-size: 1.2rem;
   }
-  
-  .schedule-table th {
-    background-color: #000000;
-    color: #ffffff;
-  }
-  
-  .schedule-table tr:nth-child(even) {
-    background-color: #f9f9f9;
-  }
-  
-  .schedule-table tr:hover {
-    background-color: #f1f1f1;
-  }
-  
-  .schedule-table td {
-    color: #333333;
-  }
-  
+}

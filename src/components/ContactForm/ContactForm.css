@@ -1,20 +1,8 @@
 .contact {
   margin: 20px
 }
-.form-container {
-  background-color: #ffffff; /* Jasno szare tło formularza */
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Cień ramki */
-  padding: 20px;
-  display: flex;
-  flex-direction: column;/* Ustawienie elementów w kolumnie */
-  align-items: center; /* Wyśrodkowanie zawartości w poziomie */
-  flex: 1; /* Formularz będzie zajmował drugą połowę przestrzeni */
-  width: 100%;
-  height: 500px;
-  
- }
+
+
 
 .form-group {
   width: 100%; /* Rozciągnięcie pól na pełną szerokość kontenera */
@@ -95,16 +83,34 @@
 
 .form-image {
   display: none;
-  /* width: 50%;
-  object-fit: cover;
-  border-radius: 8px; */
 }
 
 @media (min-width: 768px) {
     .form-image {
-      width: 100%;
+      width: 50%;
       object-fit: cover;
       border-radius: 8px;
       height: 500px; 
     }
+}
+
+.form-container {
+  background-color: #ffffff; /* Jasno szare tło formularza */
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Cień ramki */
+  padding: 20px;
+  display: flex;
+  flex-direction: column;/* Ustawienie elementów w kolumnie */
+  align-items: center; /* Wyśrodkowanie zawartości w poziomie */
+  flex: 1; /* Formularz będzie zajmował drugą połowę przestrzeni */
+  width: 100%;
+  height: 500px; 
+ }
+
+ @media (min-width: 768px) {
+  .form-container {
+    width: 50%;
+    height: 500px; 
+   }
 }
