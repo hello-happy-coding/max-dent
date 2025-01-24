@@ -16,7 +16,7 @@
     align-items: center;
     justify-content: center;
     margin-top: 5%;
-    margin-right: 25%;
+    margin-left: 10%;
   }
 
   @media (min-width: 768px) {
@@ -31,7 +31,8 @@
     font-size: 1.2rem; 
     letter-spacing: 3px;
     line-height: 1.8; 
-   margin-left: 5%;
+   margin-top: 10%;
+   margin-left: 35%;
   }
 }
 
@@ -41,8 +42,6 @@
     font-size: 1.5rem;
     letter-spacing: 5px; 
     line-height: 2;
-    margin-top: 10%;
-    margin-right: 30%;
 }
 }
 
