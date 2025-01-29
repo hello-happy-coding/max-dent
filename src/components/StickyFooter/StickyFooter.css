@@ -1,39 +1,32 @@
 .dark-logo{
     width: 300px;
     margin-left: 50px;
-
-    @media (min-width: 678px) {
-    }  
-
-
 }
 
 footer {
     background-color: black;
     color: white;
     margin-top: 20px;
-   
-
-    @media (min-width: 678px) {
-        width: 100%;
-      }  
 
   }
-
-.all-right {
-    margin-left: 50px;
-}
 
 .content-footer {
     display: flex;
     justify-content: space-between;
+    flex-direction: column;
     align-items: center;
     text-decoration: none;
     list-style: none;
     gap: 1rem;
-
 }
+
+ @media (min-width: 768px) {
+    .content-footer {
+      flex-direction: row;
+    }
+} 
 
 .happy-coding {
 margin-right: 50px;
 }
+

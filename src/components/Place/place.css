@@ -16,10 +16,10 @@
 
 /* Prawa sekcja (Znajdziesz nas na + ikony) */
 .right-section {
-  display: flex;
+  /* display: flex;
   flex-direction: row;
   align-items: flex-end;
-  gap: 10px; 
+  gap: 10px;  */
   margin-top: 60px;
   margin-bottom: 30px;
 }
@@ -30,6 +30,7 @@
   font-weight: bold;
   color: #d67500;
   text-transform: uppercase;
+  margin-top: 50px;
 }
 
 .contact-item {
@@ -45,13 +46,13 @@
 }
 
 .schedule-table {
-  width: 50%;
   border-collapse: collapse;
   margin-top: 20px;
   font-size: 1rem;
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
 }
 
 .schedule-table th {
@@ -85,16 +86,18 @@
   font-weight: bold;
   color: #d67500;
   text-align: right;
+  margin-bottom: 20px;
 }
 
 /* RESPONSYWNOŚĆ */
 @media (min-width: 768px) {
   .Information {
-    flex-direction: row;
-    align-items: center;
+    display: flex;
+    flex-direction: row; 
+    align-items: center; 
     text-align: center;
     padding-left: 120px;
-  }
+  } 
 
   .left-section {
     margin-bottom: 20px;
@@ -106,16 +109,12 @@
     padding-left: 15%;
   }
 
-  .schedule-table {
-    width: 100%;
-  }
-
   .city {
     font-size: 1.5rem;
   }
 }
 
-@media (min-width: 480px) {
+/* @media (min-width: 480px) {
   .schedule-table {
     width: 100%;
     font-size: 0.9rem;
@@ -128,4 +127,4 @@
   .contact-item .icon {
     font-size: 1.2rem;
   }
-}
+} */

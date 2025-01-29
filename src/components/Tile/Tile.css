@@ -36,15 +36,13 @@
   z-index: 1000; 
 }
 
-@media (min-width: 768px) {
-  .modal-text {
-    line-height: 1.5;
-    column-count: 3;
-    column-gap: 20px;
-    margin: 30px;
-    font-size: 1.6rem;
-  }
+.modal-text {
+  line-height: 1.2;
+  column-gap: 20px;
+  margin: 30px;
+  font-size: 1.3rem;
 }
+
 
 .modal-content {
   display: grid; /* Ustawienie flexboxa */
@@ -82,10 +80,6 @@
   cursor: pointer;
 }
 
-.modal-text {
-  column-count: 3;
-  font-size: 0.8rem;
-}
 
 .modal-heading {
   z-index: 2;

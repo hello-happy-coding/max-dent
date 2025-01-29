@@ -1,12 +1,12 @@
 import React from "react";
 import { Parallax } from "react-parallax";
-import Mobilka from "../../../../assets/images/mobilka.jpg";
+import Main from "../../../../assets/images/main.jpg";
 import "../First/First.css";
 
 const ImageOne = () => (
   <Parallax
     className="image animate__animated animate__fadeIn"
-    bgImage={Mobilka}
+    bgImage={Main}
     strength={300}
   >
     <div className="content">
