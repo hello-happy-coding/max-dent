@@ -5,6 +5,7 @@ import Navbar from './components/Navbar/Navbar';
 import Main from './components/Main/Main';
 import BackToTop from './components/ScrollToTop/ScrollToTop';
 import TelefonButton from "./components/TelefonButton/TelefonButton";
+import  "@fontsource/cormorant-garamond";
 
 
 
