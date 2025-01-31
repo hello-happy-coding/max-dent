@@ -75,8 +75,6 @@
 
 @media (min-width: 768px) {
   .contact {
-    margin-left: 120px;
-    margin-right: 120px;
     padding-top: 20px;
   }
 
@@ -118,4 +116,12 @@
     width: 50%;
     height: 500px;  
    }
+}
+
+@media (min-width: 1020px) {
+  .contact {
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 20px;
+  }
 }

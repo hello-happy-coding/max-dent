@@ -9,7 +9,8 @@
 
 @media (min-width: 768px) {
     .containerService {
-        margin: 120px;
+        margin-left: 120px;
+        margin-right: 120px;
         padding-top: 20px;
     }
     }

@@ -5,8 +5,8 @@ import Divider from "../Divider/Divider";
 
 const OuersService = () => {
   return (
-    <div className="containerService">
-      <h3 id="nasza-oferta">NASZA OFERTA</h3>
+    <div id="nasza-oferta" className="containerService">
+      <h3>NASZA OFERTA</h3>
       <Divider />
       <Offer />
     </div>

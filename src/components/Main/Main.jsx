@@ -11,9 +11,9 @@ function Main() {
   return (
     <div>
       <ImageOne />
-      <FirstVisit />
-      <ImageTwo />
       <OuersServices />
+      <ImageTwo />
+      <FirstVisit />
       <ImageThree />
       <ContactForm />
       <Place />
