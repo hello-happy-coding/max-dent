@@ -6,6 +6,7 @@ import FirstVisit from "../FirstVisit/FirstVisit";
 import OuersServices from "../OuersServices/OuersServices";
 import Place from "../Place/Place";
 import ContactForm from "../ContactForm/ContactForm";
+import Cookie from "../Cookie/Cookie";
 
 function Main() {
   return (
@@ -16,6 +17,7 @@ function Main() {
       <FirstVisit />
       <ImageThree />
       <ContactForm />
+      <Cookie />
       <Place />
     </div>
   );
