@@ -1,14 +1,12 @@
 import React from "react";
 import "./Place.css";
 import "animate.css";
-import Facebook from "./Facebook";
-import InstagramIcon from "./Instagram";
+
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 
 const Place = () => {
   return (
     <div className="Information">
-      {/* Lewa strona: OLKUSZ, kontakt, tabela */}
       <div className="left-section">
         <div className="city">OLKUSZ</div>
 
@@ -44,13 +42,6 @@ const Place = () => {
             </tr>
           </tbody>
         </table>
-      </div>
-
-      {/* Prawa strona: ikony społecznościowe */}
-      <div className="right-section">
-        <div className="socialText">ZNAJDZIESZ NAS NA:</div>
-        <Facebook />
-        <InstagramIcon />
       </div>
     </div>
   );

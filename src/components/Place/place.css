@@ -20,8 +20,8 @@
   flex-direction: row;
   align-items: flex-end;
   gap: 10px;  */
-  margin-top: 60px;
-  margin-bottom: 30px;
+  /* margin-top: 60px;
+  margin-bottom: 30px; */
 }
 
 .city {
@@ -81,13 +81,6 @@
   transition: 0.3s ease-in-out;
 }
 
-.socialText {
-  font-size: 1.5rem;
-  font-weight: bold;
-  color: #d67500;
-  text-align: right;
-  margin-bottom: 20px;
-}
 
 /* RESPONSYWNOŚĆ */
 @media (min-width: 768px) {
@@ -102,11 +95,6 @@
   .left-section {
     margin-bottom: 20px;
     max-width: 40%;
-  }
-
-  .right-section {
-    align-items: center;
-    padding-left: 15%;
   }
 
   .city {
