@@ -11,21 +11,31 @@
 
 /* Lewa sekcja (Olkusz + kontakt + tabela) */
 .left-section {
-  flex: 2;
+  /* flex: 1; */
   text-align: center;
   padding-right: 20px;
 }
 
 .right-section-table {
   flex: 1;
+  max-width: 30%;
 }
 
 .city {
-  margin-bottom: 30px;
+  margin-bottom: 15px;
   font-size: 2rem;
   font-weight: bold;
   color: orange;
   text-transform: uppercase;
+  display: block;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  margin-top: 10px;
 }
 
 .contact-item {
@@ -46,21 +56,22 @@
   margin-top: 20px;
   font-size: 1rem;
   background-color: #ffffff;
-  padding: 50px;
+  padding: 20px;
+  border-collapse: collapse;
 }
 
 .schedule-table th, .schedule-table td {
-  padding: 10px;
+  padding: 12px;
   text-align: center;
   font-size: 1rem;
   color: #000;
-  border-bottom: 1px solid #000;
+  border-bottom: 1px solid #ddd;
 }
 
 .schedule-table th {
-  background: #ffffff;
+  background: #f8f8f8;
   font-weight: bold;
-  border-bottom: 1px solid #000;
+  border-bottom: 2px solid #ddd;
 }
 
 .schedule-table tr:last-child td {
@@ -79,7 +90,6 @@
 
   .left-section {
     margin-bottom: 0;
-    max-width: 45%;
   }
 
   .city {

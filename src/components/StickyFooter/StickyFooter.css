@@ -6,7 +6,7 @@
 }
 
 .left-section-footer {
-  flex: 3;
+  flex: 2;
 }
 
 .dark-logo {
@@ -26,6 +26,17 @@
   color: #ffffff;
   margin-top: 20px;
 }
+
+@media (min-width: 550px) {
+  .content-footer {
+  flex-direction: row;
+}
+}
+
+.happy-coding:hover {
+  text-decoration: underline;
+}
+
 
 .right-section {
   display: flex;

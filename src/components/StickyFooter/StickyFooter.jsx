@@ -13,9 +13,15 @@ function StickyFooter() {
         <img src={logod} alt="logo" className="dark-logo" />
         <div className="content-footer">
           <div className="all-right">
-            &copy; {currentYear} Wszelkie prawa zastrzeżone.
-            <div className="happy-coding">By Happy Coding</div>
+            &copy; {currentYear} Wszelkie prawa zastrzeżone. ‖
           </div>
+          <a
+            href="https://happy-coding.pl"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <div className="happy-coding">By Happy Coding</div>
+          </a>
         </div>
       </div>
       <div className="right-section">
