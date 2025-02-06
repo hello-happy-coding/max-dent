@@ -39,8 +39,8 @@ const Place = () => {
               <td>11:00 - 18:00</td>
             </tr>
             <tr>
-              <td>Czwartek</td>
-              <td>11:00 - 18:00</td>
+              <td className="viernes">Czwartek</td>
+              <td className="viernes">11:00 - 18:00</td>
             </tr>
           </tbody>
         </table>

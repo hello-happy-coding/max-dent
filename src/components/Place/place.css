@@ -11,7 +11,6 @@
 
 /* Lewa sekcja (Olkusz + kontakt + tabela) */
 .left-section {
-  /* flex: 1; */
   text-align: center;
   padding-right: 20px;
 }
@@ -22,10 +21,10 @@
 }
 
 .city {
-  margin-bottom: 15px;
+  margin-bottom: 40px;
   font-size: 2rem;
   font-weight: bold;
-  color: orange;
+  color: rgba(255, 166, 0, 0.767);
   text-transform: uppercase;
   display: block;
 }
@@ -46,7 +45,7 @@
 }
 
 .contact-item .icon {
-  font-size: 1.7rem;
+  font-size: 1rem;
   color: #555;
 }
 
@@ -58,14 +57,20 @@
   background-color: #ffffff;
   padding: 20px;
   border-collapse: collapse;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
 .schedule-table th, .schedule-table td {
-  padding: 12px;
+  padding-top: 12px;
   text-align: center;
   font-size: 1rem;
   color: #000;
   border-bottom: 1px solid #ddd;
+}
+
+.viernes {
+  padding-bottom: 12px;
+  padding-top: none;
 }
 
 .schedule-table th {
@@ -86,6 +91,8 @@
     align-items: center;
     text-align: center;
     padding: 40px;
+    gap: 50px;
+    justify-content: center;
   }
 
   .left-section {
