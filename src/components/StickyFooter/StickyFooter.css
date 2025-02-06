@@ -1,17 +1,16 @@
 .sticky-footer {
   display: flex;
   flex-direction: row;
-  align-items: center;
   padding: 20px;
   background-color: #000000;
 }
 
 .left-section-footer {
-  flex: 2;
+  flex: 3;
 }
 
 .dark-logo {
-  width: 100px; /* Możesz dostosować rozmiar */
+  width: 150px; /* Możesz dostosować rozmiar */
 }
 
 .content-footer {
@@ -33,9 +32,10 @@
   align-items: center;
   gap: 10px;
   flex: 1;
-  flex-direction: column;
+  flex-direction: row;
   align-items: flex-start;
 }
+
 
 .icons {
   size: 30;

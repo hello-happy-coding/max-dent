@@ -24,8 +24,10 @@ const Place = () => {
           <FaMapMarkerAlt className="icon" />
           <span>ul. Nowa 13, Olkusz</span>
         </div>
+      </div>
 
-        {/* Tabela godzin otwarcia */}
+      {/* Tabela godzin otwarcia */}
+      <div className="right-section-table">
         <table className="schedule-table">
           <tbody>
             <tr>

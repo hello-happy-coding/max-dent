@@ -1,5 +1,5 @@
 import React from "react";
-import logod from "../../assets/logo/logow.svg";
+import logod from "../../assets/logo/logod.png";
 import "./StickyFooter.css";
 import { BiLogoFacebookSquare } from "react-icons/bi";
 import { FaInstagram } from "react-icons/fa";
