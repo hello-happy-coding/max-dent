@@ -31,12 +31,12 @@ const Place = () => {
         <table className="schedule-table">
           <tbody>
             <tr>
-              <td>Poniedziałek</td>
-              <td>11:00 - 18:00</td>
+              <td className="lunes">Poniedziałek</td>
+              <td className="lunes">11:00 - 18:00</td>
             </tr>
             <tr>
-              <td>Wtorek</td>
-              <td>11:00 - 18:00</td>
+              <td className="martes">Wtorek</td>
+              <td className="martes">11:00 - 18:00</td>
             </tr>
             <tr>
               <td className="viernes">Czwartek</td>
