@@ -6,6 +6,7 @@ import Main from './components/Main/Main';
 import BackToTop from './components/ScrollToTop/ScrollToTop';
 import TelefonButton from "./components/TelefonButton/TelefonButton";
 import  "@fontsource/cormorant-garamond";
+import CookieModal from './components/Cookie/Cookie';
 
 
 
@@ -17,6 +18,7 @@ function App() {
       <StickyFooter />
       <BackToTop />
       <TelefonButton />
+      <CookieModal />
     </div>
   );
 }
