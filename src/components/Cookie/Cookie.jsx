@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import "../Cookie/Cookie.css";
+import { LiaCookieBiteSolid } from "react-icons/lia";
 
 const CookieModal = () => {
   const [visible, setVisible] = useState(false);
@@ -21,6 +22,7 @@ const CookieModal = () => {
   return (
     <div className="modal-cook">
       <div className="modal-content">
+        <LiaCookieBiteSolid />
         <h3>Cenimy prywatność użytkowników</h3>
         <p>
           Nasza strona wykorzystuje pliki cookie, aby formularz działał
