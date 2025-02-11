@@ -11,7 +11,8 @@
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center; /* Wyrównuje kafelki w poziomie */
-    align-items: center;     /* Wyrównuje kafelki w pionie */       
+    align-items: center;     /* Wyrównuje kafelki w pionie */   
+    margin-top: 100px;    
   }
 }
 

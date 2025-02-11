@@ -1,47 +1,61 @@
-.image {
-    position: relative;
-    height: 30vh;
+.nav-overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.3); /* Lekki cień */
+  backdrop-filter: blur(5px); /* Efekt rozmycia */
+  z-index: 1000;
+  padding: 10px 0;
 }
 
-.content {
-    display: flex;
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Logo na środku */
+  position: relative;
+  padding: 0 20px;
 }
 
-  .content span.img-text {
-    text-align: center;
-    font-size: 1.2rem; 
-    letter-spacing: 2px;  
-    padding: 0.5rem; 
-    line-height: 1.5;
-    align-items: center;
-    justify-content: center;
-    margin-top: 10%;
-    margin-left: 15%;
-  }
-
-  @media (min-width: 768px) {
-    .image {
-        position: relative;
-        height: 100vh;
-    }
-  }
-   
-@media (min-width: 768px) {
-  .content span.img-text {
-    font-size: 1.6rem; 
-    letter-spacing: 3px;
-    line-height: 1.8; 
-   margin-top: 15%;
-   margin-left: 40%;
-  }
+.nav-container {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
 }
 
-@media (min-width: 1028px) {
-.content span.img-text {
-    padding: 1rem;
-    font-size: 1.5rem;
-    letter-spacing: 5px; 
-    line-height: 2;
-}
+.nav-left, .nav-right {
+  display: flex;
+  align-items: center;
+  gap: 30px; /* Odstępy między elementami */
 }
 
+.nav-left {
+  margin-right: auto; /* Wypycha elementy na lewo */
+}
+
+.nav-right {
+  margin-left: auto; /* Wypycha elementy na prawo */
+}
+
+.center-logo {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 50px;
+}
+
+.hamburger {
+  position: absolute;
+  left: 15px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}

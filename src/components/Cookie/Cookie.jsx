@@ -22,7 +22,7 @@ const CookieModal = () => {
   return (
     <div className="modal-cook">
       <div className="modal-content">
-        <LiaCookieBiteSolid />
+        <LiaCookieBiteSolid size={40} />
         <h3>Cenimy prywatność użytkowników</h3>
         <p>
           Nasza strona wykorzystuje pliki cookie, aby formularz działał
