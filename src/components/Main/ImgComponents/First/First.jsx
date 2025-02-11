@@ -26,7 +26,6 @@ function First() {
       <header className="nav-overlay">
         <nav className="nav">
           <div className="nav-container">
-            {/* Lewa strona - "NASZA OFERTA" */}
             <div className="nav-left">
               <a
                 href="#nasza-oferta"
@@ -37,14 +36,12 @@ function First() {
               </a>
             </div>
 
-            {/* Logo na środku */}
             <img
               src={logow}
               alt="logo"
               className="white-logo center-logo animate__animated animate__fadeIn"
             />
 
-            {/* Prawa strona - Adres + Numer telefonu */}
             <div className="nav-right">
               <a
                 href="https://maps.app.goo.gl/Xx2G8JeoEFtho7Sm8"
@@ -63,20 +60,15 @@ function First() {
               </a>
             </div>
           </div>
-
-          {/* Przycisk menu mobilnego */}
-          {/* <button
-            className={`hamburger ${menuOpen ? "open" : ""}`}
-            aria-label="Toggle navigation"
-            onClick={toggleMenu}
-          >
-            <FontAwesomeIcon icon={faBars} />
-          </button> */}
         </nav>
       </header>
 
-      {/* Główne zdjęcie */}
-      <img src={Main} alt="Main background" className="main-image" />
+      {/* Główne zdjęcie z tekstem na środku */}
+      <div className="main-image-container">
+        <img src={Main} alt="Main background" className="main-image" />
+        <div className="main-text">Prywatna Praktyka Stomatologiczna</div>
+        <div className="main-text-2">MAX DENT</div>
+      </div>
     </>
   );
 }

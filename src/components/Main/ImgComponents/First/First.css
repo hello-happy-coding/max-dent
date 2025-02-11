@@ -6,12 +6,13 @@
   backdrop-filter: blur(5px); /* Efekt rozmycia */
   z-index: 1000;
   padding: 10px 0;
+  height: 50px;
 }
 
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center; /* Logo na środku */
+  justify-content: center; /* Logo i napisy na środku */
   position: relative;
   padding: 0 20px;
 }
@@ -19,8 +20,9 @@
 .nav-container {
   display: flex;
   width: 100%;
-  justify-content: space-between;
+  justify-content: center; /* Środkowanie zawartości */
   align-items: center;
+  position: relative;
 }
 
 .nav-left, .nav-right {
@@ -30,11 +32,11 @@
 }
 
 .nav-left {
-  margin-right: auto; /* Wypycha elementy na lewo */
+  margin-right: auto;
 }
 
 .nav-right {
-  margin-left: auto; /* Wypycha elementy na prawo */
+  margin-left: auto;
 }
 
 .center-logo {
@@ -42,6 +44,20 @@
   left: 50%;
   transform: translateX(-50%);
   height: 50px;
+  z-index: 1; /* Zapewnia, że logo jest na wierzchu */
+}
+
+.nav-offer, .nav-address {
+  color: white;
+  font-size: 18px;
+  padding: 5px 10px;
+  transition: background-color 0.3s ease, text-decoration 0.3s ease;
+}
+
+.nav-offer:hover, .nav-address:hover {
+  background-color: rgba(0, 0, 0, 0.7); /* Poprawione ciemniejsze tło po najechaniu */
+  border-radius: 5px;
+  text-decoration: underline; /* Podkreślenie po najechaniu */
 }
 
 .hamburger {
@@ -58,4 +74,41 @@
   width: 100%;
   height: auto;
   display: block;
+}
+
+.main-image-container {
+  position: relative;
+  display: column;
+  width: 100%;
+}
+
+.main-image {
+  width: 100%;
+  display: block;
+}
+
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
+}
+
+.main-text-2 {
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 10px 20px;
+  border-radius: 5px;
 }
