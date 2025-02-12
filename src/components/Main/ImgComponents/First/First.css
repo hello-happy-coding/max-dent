@@ -1,73 +1,121 @@
+/* Nawigacja */
 .nav-overlay {
-  position: absolute;
+  position: fixed;
   top: 0;
   width: 100%;
-  background: rgba(0, 0, 0, 0.3); /* Lekki cień */
-  backdrop-filter: blur(5px); /* Efekt rozmycia */
+  background: rgba(0, 0, 0, 0.7); /* Ciemniejsze, lekko przeźroczyste tło */
+  backdrop-filter: blur(5px);
   z-index: 1000;
   padding: 10px 0;
-  height: 50px;
+  height: 60px;
+  display: flex;
+  justify-content: center;
 }
 
+/* Kontener nawigacji */
 .nav {
   display: flex;
   align-items: center;
-  justify-content: center; /* Logo i napisy na środku */
-  position: relative;
-  padding: 0 20px;
+  justify-content: center;
+  width: 100%;
 }
 
 .nav-container {
   display: flex;
-  width: 100%;
-  justify-content: center; /* Środkowanie zawartości */
   align-items: center;
-  position: relative;
+  justify-content: center;
+  width: 100%;
+  gap: 60px;
 }
 
-.nav-left, .nav-right {
+/* Logo */
+.center-logo {
+  height: 100px;
+}
+
+/* Menu standardowe (widoczne na małych ekranach) */
+.nav-right,
+.nav-left {
   display: flex;
   align-items: center;
-  gap: 30px; /* Odstępy między elementami */
+  gap: 60px;
 }
 
-.nav-left {
-  margin-right: auto;
-}
-
-.nav-right {
-  margin-left: auto;
-}
-
-.center-logo {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 50px;
-  z-index: 1; /* Zapewnia, że logo jest na wierzchu */
-}
-
-.nav-offer, .nav-address {
+.nav-right a,
+.nav-left a {
   color: white;
   font-size: 18px;
-  padding: 5px 10px;
-  transition: background-color 0.3s ease, text-decoration 0.3s ease;
+  text-decoration: none;
+  transition: text-decoration 0.3s ease, color 0.3s ease;
 }
 
-.nav-offer:hover, .nav-address:hover {
-  background-color: rgba(0, 0, 0, 0.7); /* Poprawione ciemniejsze tło po najechaniu */
-  border-radius: 5px;
-  text-decoration: underline; /* Podkreślenie po najechaniu */
+.nav-right a:hover,
+.nav-left a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+  color: #f1c40f; /* Złoty akcent na hover */
 }
 
+/* Hamburger menu (DOMYŚLNIE UKRYTE) */
 .hamburger {
-  position: absolute;
-  left: 15px;
+  display: none;
   background: none;
   border: none;
-  font-size: 24px;
+  font-size: 28px;
   color: white;
   cursor: pointer;
+  position: absolute;
+  left: 15px;
+}
+
+/* Menu rozwijane (DOMYŚLNIE UKRYTE) */
+.mobile-menu {
+  display: none;
+  position: absolute;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.9);
+  text-align: center;
+  padding: 20px 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mobile-menu a {
+  color: white;
+  font-size: 20px;
+  padding: 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.mobile-menu a:hover {
+  text-decoration: underline;
+  color: #f1c40f;
+}
+
+/* POKAZANIE HAMBURGERA DLA SZEROKOŚCI POWYŻEJ 580px */
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-right,
+  .nav-left {
+    display: none;
+  }
+
+  .mobile-menu.open {
+    display: flex;
+  }
+}
+
+/* Główne zdjęcie */
+.main-image-container {
+  position: relative;
+  width: 100%;
+  margin-top: 60px; /* Aby nie zasłaniało nawigacji */
 }
 
 .main-image {
@@ -76,39 +124,28 @@
   display: block;
 }
 
-.main-image-container {
-  position: relative;
-  display: column;
-  width: 100%;
-}
-
-.main-image {
-  width: 100%;
-  display: block;
-}
-
-.main-text {
+/* Tekst na zdjęciu */
+.clinic-info {
   position: absolute;
   top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
-  font-weight: bold;
+  left: 5%;
+  transform: translateY(-50%);
   color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  border-radius: 5px;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  border-radius: 8px;
 }
 
-.main-text-2 {
-  position: absolute;
-  top: 60%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  font-size: 40px;
+.clinic-desc {
+  font-size: 22px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.clinic-name {
+  font-size: 32px;
   font-weight: bold;
-  color: white;
-  background: rgba(0, 0, 0, 0.5);
-  padding: 10px 20px;
-  border-radius: 5px;
+  margin-top: 5px;
+  color: #f1c40f; /* Złoty kolor dla elegancji */
 }

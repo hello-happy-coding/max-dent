@@ -6,13 +6,7 @@ import CaffeImage from "../../assets/images/caffe.jpg";
 const ContactForm = () => {
   return (
     <div className="contact">
-      <h3 id="umów się na wizytę">
-        MASZ PYTANIA?
-        <br />
-        CHCESZ UMÓWIĆ SIĘ NA WIZYTĘ?
-        <br />
-        ZAPRASZAMY DO KONTAKTU.
-      </h3>
+      <h3 id="umów się na wizytę">ZAPRASZAMY DO KONTAKTU</h3>
       <Divider />
       <form action="https://formsubmit.co/arkzurek@gmail.com" method="POST">
         <div className="container">

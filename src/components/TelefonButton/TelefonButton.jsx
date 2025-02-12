@@ -27,7 +27,7 @@ function TelefonButton() {
         <button
           style={{
             position: "fixed",
-            bottom: "450px",
+            bottom: "50%",
             right: "0px",
             height: "40px",
             width: "110px",
