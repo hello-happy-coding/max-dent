@@ -7,6 +7,7 @@ import TelefonButton from "./components/TelefonButton/TelefonButton";
 import  "@fontsource/cormorant-garamond";
 import CookieModal from './components/Cookie/Cookie';
 // import { First } from 'react-bootstrap/esm/PageItem';
+import Preloader from "../src/components/Preloader/Preloader";
 
 
 
@@ -14,6 +15,7 @@ import CookieModal from './components/Cookie/Cookie';
 function App() {
   return (
     <div className="App">
+      <Preloader />
       <Main />
       <StickyFooter />
       <BackToTop />
