@@ -1,6 +1,6 @@
 import React from "react";
 import ImageOne from "./ImgComponents/First/First";
-import ImageTwo from "./ImgComponents/Second/Second";
+import ImageTwo from "../../components/Main/ImgComponents/Second/Second";
 import ImageThree from "./ImgComponents/Third/Third";
 import FirstVisit from "../FirstVisit/FirstVisit";
 import OuersServices from "../OuersServices/OuersServices";

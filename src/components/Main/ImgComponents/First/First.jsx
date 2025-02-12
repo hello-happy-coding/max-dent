@@ -3,7 +3,7 @@ import logow from "../../../../assets/logo/logow.svg";
 import "../First/First.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
-import Main from "../../../../assets/images/main.jpg";
+import Tools from "../../../../assets/images/main.jpg";
 
 function First() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -46,8 +46,6 @@ function First() {
                 <b>+48 669 000 700</b>
               </a>
             </div>
-
-            {/* Menu rozwijane (dla >580px) */}
             <div className={`mobile-menu ${menuOpen ? "open" : ""}`}>
               <a href="#nasza-oferta">
                 <b>NASZA OFERTA</b>
@@ -68,7 +66,7 @@ function First() {
       </header>
 
       <div className="main-image-container">
-        <img src={Main} alt="Main background" className="main-image" />
+        <img src={Tools} alt="Main background" className="main-image" />
         <div className="clinic-info">
           <span className="clinic-desc">Prywatna Praktyka Stomatologiczna</span>
           <br />
