@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import IG from "../../assets/images/ig.png";
+import React, { useState } from 'react';
+import IG from '../../assets/images/ig.png';
 
 const InstagramIcon = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -12,23 +12,23 @@ const InstagramIcon = () => {
   };
 
   const handleClick = () => {
-    window.open("https://www.instagram.com/ortho.of.care/", "_blanc");
+    window.open('https://www.instagram.com/ortho.of.care/', '_blanc');
   };
   return (
     <img
       src={IG}
-      alt="klik"
+      alt='klik'
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{
-        cursor: "pointer",
-        width: "30px",
-        height: "30px",
-        backgroundColor: isHovered ? "orange" : "lightgray",
-        transistion: "background-color 0.4s ease",
-        borderRadius: "5px",
-        marginLeft: "20px",
+        cursor: 'pointer',
+        width: '30px',
+        height: '30px',
+        backgroundColor: isHovered ? 'orange' : 'lightgray',
+        transistion: 'background-color 0.4s ease',
+        borderRadius: '5px',
+        marginLeft: '20px',
       }}
     />
   );

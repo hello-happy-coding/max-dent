@@ -50,6 +50,7 @@
     ]
   },
   "devDependencies": {
+    "prettier": "3.5.1",
     "react-router-dom": "^7.0.2"
   }
 }

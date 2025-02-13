@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import FB from "../../assets/images/facebook.png";
+import React, { useState } from 'react';
+import FB from '../../assets/images/facebook.png';
 
 const FacebookIcon = () => {
   const [isHovered, setIsHovered] = useState(false);
@@ -13,24 +13,24 @@ const FacebookIcon = () => {
 
   const handleClick = () => {
     window.open(
-      "https://www.facebook.com/p/Praktyka-Stomatologiczna-Arkadiusz-%C5%BBurek-100063535452341/?locale=nl_NL&_rdr",
-      "_blanc"
+      'https://www.facebook.com/p/Praktyka-Stomatologiczna-Arkadiusz-%C5%BBurek-100063535452341/?locale=nl_NL&_rdr',
+      '_blanc'
     );
   };
   return (
     <img
       src={FB}
-      alt="klik"
+      alt='klik'
       onClick={handleClick}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
       style={{
-        cursor: "pointer",
-        width: "30px",
-        height: "30px",
-        backgroundColor: isHovered ? "orange" : "lightgray",
-        transistion: "background-color 0.4s ease",
-        borderRadius: "2px",
+        cursor: 'pointer',
+        width: '30px',
+        height: '30px',
+        backgroundColor: isHovered ? 'orange' : 'lightgray',
+        transistion: 'background-color 0.4s ease',
+        borderRadius: '2px',
       }}
     />
   );

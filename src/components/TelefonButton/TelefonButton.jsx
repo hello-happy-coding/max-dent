@@ -1,5 +1,5 @@
-import React from "react";
-import { useEffect, useState } from "react";
+import React from 'react';
+import { useEffect, useState } from 'react';
 
 function TelefonButton() {
   const [BackToTop, setBackToTop] = useState(false);
@@ -11,14 +11,14 @@ function TelefonButton() {
         setBackToTop(false);
       }
     };
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll); // Clean up listener
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll); // Clean up listener
   }, []);
 
   const scrollToSection = () => {
-    const section = document.getElementById("umów się na wizytę");
+    const section = document.getElementById('umów się na wizytę');
     if (section) {
-      section.scrollIntoView({ behavior: "smooth" });
+      section.scrollIntoView({ behavior: 'smooth' });
     }
   };
   return (
@@ -26,15 +26,15 @@ function TelefonButton() {
       {BackToTop && (
         <button
           style={{
-            position: "fixed",
-            bottom: "50%",
-            right: "0px",
-            height: "40px",
-            width: "110px",
-            backgroundColor: "black",
-            color: "white",
-            cursor: "pointer",
-            border: "none",
+            position: 'fixed',
+            bottom: '50%',
+            right: '0px',
+            height: '40px',
+            width: '110px',
+            backgroundColor: 'black',
+            color: 'white',
+            cursor: 'pointer',
+            border: 'none',
           }}
           onClick={scrollToSection}
         >

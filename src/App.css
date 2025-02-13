@@ -1,18 +1,18 @@
 body {
-   margin: 0; 
-   padding: 0; 
-   width: 100%;
-   font-family: "Poppins";
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: "Poppins";
 }
 
 textarea {
-font-family: 'Poppins';
+  font-family: "Poppins";
 }
 
 a {
   text-decoration: none;
   color: inherit;
-} 
+}
 
 a:hover,
 a:active {
@@ -35,5 +35,3 @@ main {
   flex: 1;
   padding: 20px;
 }
-
-

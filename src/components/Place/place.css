@@ -67,7 +67,8 @@
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.schedule-table th, .schedule-table td {
+.schedule-table th,
+.schedule-table td {
   text-align: center;
   font-size: 1rem;
   color: #000;
@@ -85,8 +86,8 @@
 }
 
 .martes {
-padding-top: 5px;
-padding-bottom: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 .schedule-table th {

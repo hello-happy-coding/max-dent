@@ -2,7 +2,6 @@
   margin: 20px;
 }
 
-
 .form-group {
   width: 100%; /* Rozciągnięcie pól na pełną szerokość kontenera */
   display: flex;
@@ -56,7 +55,6 @@
   transition: background-color 0.3s ease;
   margin-top: 15px; /* Odstęp od ostatniego pola */
   align-self: center; /* Wyśrodkowanie przycisku */
- 
 }
 
 .submit-btn:hover {
@@ -65,22 +63,22 @@
 
 .container {
   display: flex;
-   gap: 48px; 
-   flex-direction: column;           
+  gap: 48px;
+  flex-direction: column;
 }
 
- .container-image {
+.container-image {
   width: 50%;
- }
+}
 
 @media (min-width: 768px) {
   .contact {
     padding-top: 20px;
   }
 
-  .container { 
-     flex-direction: row;      
-     margin-top: 100px;     
+  .container {
+    flex-direction: row;
+    margin-top: 100px;
   }
 }
 
@@ -93,9 +91,9 @@
 }
 
 @media (min-width: 768px) {
-    .form-image {
-      display: block; 
-    }
+  .form-image {
+    display: block;
+  }
 }
 
 .form-container {
@@ -105,18 +103,18 @@
   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* Cień ramki */
   padding: 20px;
   display: flex;
-  flex-direction: column;/* Ustawienie elementów w kolumnie */
+  flex-direction: column; /* Ustawienie elementów w kolumnie */
   align-items: center; /* Wyśrodkowanie zawartości w poziomie */
   flex: 1; /* Formularz będzie zajmował drugą połowę przestrzeni */
   width: 100%;
-  height: 500px; 
- }
+  height: 500px;
+}
 
- @media (min-width: 768px) {
+@media (min-width: 768px) {
   .form-container {
     width: 50%;
-    height: 500px;  
-   }
+    height: 500px;
+  }
 }
 
 @media (min-width: 1020px) {
