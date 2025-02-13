@@ -2,20 +2,16 @@
   display: inline-grid;
   gap: 16px;
   justify-content: center; /* Wyrównuje kafelki w poziomie */
-  width: 100%;             /* Zapewnia, że kontener zajmuje całą dostępną szerokość */
-  height: 50%;       
+  width: 100%; /* Zapewnia, że kontener zajmuje całą dostępną szerokość */
+  height: 50%;
 }
-  
-@media (min-width: 768px) { 
+
+@media (min-width: 768px) {
   .tiles-section {
     display: inline-flex;
     flex-wrap: wrap;
     justify-content: center; /* Wyrównuje kafelki w poziomie */
-    align-items: center;     /* Wyrównuje kafelki w pionie */   
-    margin-top: 100px;    
+    align-items: center; /* Wyrównuje kafelki w pionie */
+    margin-top: 100px;
   }
 }
-
-
-
- 

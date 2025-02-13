@@ -1,17 +1,17 @@
 .containerService {
-    margin: 20px;
+  margin: 20px;
 }
 
 .line {
-    width: 50%;
-    margin-bottom: 20px;
+  width: 50%;
+  margin-bottom: 20px;
 }
 
 @media (min-width: 768px) {
-    .containerService {
-        margin-left: 120px;
-        margin-right: 120px;
-        padding-top: 20px;
-        margin-bottom: 120px;
-    }
-    }
+  .containerService {
+    margin-left: 120px;
+    margin-right: 120px;
+    padding-top: 20px;
+    margin-bottom: 120px;
+  }
+}

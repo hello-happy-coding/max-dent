@@ -29,14 +29,13 @@
 
 @media (min-width: 550px) {
   .content-footer {
-  flex-direction: row;
-}
+    flex-direction: row;
+  }
 }
 
 .happy-coding:hover {
   text-decoration: underline;
 }
-
 
 .right-section {
   display: flex;
@@ -46,7 +45,6 @@
   flex-direction: row;
   align-items: flex-start;
 }
-
 
 .icons {
   size: 30;

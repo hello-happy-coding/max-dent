@@ -1,14 +1,14 @@
-import React from "react";
-import "./FirstVisit.css";
-import Divider from "../Divider/Divider";
+import React from 'react';
+import './FirstVisit.css';
+import Divider from '../Divider/Divider';
 
 const FirstVisit = () => {
   return (
-    <div className="contener-first-visit">
-      <h3 className="title-first-visit">PIERWSZA WIZYTA W NASZYM GABINECIE</h3>
+    <div className='contener-first-visit'>
+      <h3 className='title-first-visit'>PIERWSZA WIZYTA W NASZYM GABINECIE</h3>
       <Divider />
       <div>
-        <p className="text-first-visit-one">
+        <p className='text-first-visit-one'>
           Pierwsza wizyta to ważny krok w kierunku zdrowego uśmiechu, dlatego
           staramy się, aby każde pierwsze wrażenie było pozytywne i komfortowe.
           Indywidualne podejście do pacjenta jest dla nas priorytetem - każda

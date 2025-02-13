@@ -14,7 +14,7 @@ const FacebookIcon = () => {
   const handleClick = () => {
     window.open(
       "https://www.facebook.com/p/Praktyka-Stomatologiczna-Arkadiusz-%C5%BBurek-100063535452341/?locale=nl_NL&_rdr",
-      "_blanc"
+      "_blanc",
     );
   };
   return (

@@ -1,27 +1,27 @@
-import { useEffect, useState } from "react";
-import "../Cookie/Cookie.css";
-import { LiaCookieBiteSolid } from "react-icons/lia";
+import { useEffect, useState } from 'react';
+import '../Cookie/Cookie.css';
+import { LiaCookieBiteSolid } from 'react-icons/lia';
 
 const CookieModal = () => {
   const [visible, setVisible] = useState(false);
 
   useEffect(() => {
     // Sprawdź, czy użytkownik już zaakceptował cookies
-    if (!localStorage.getItem("cookiesAccepted")) {
+    if (!localStorage.getItem('cookiesAccepted')) {
       setVisible(true); // Pokaż modal
     }
   }, []);
 
   const acceptCookies = () => {
-    localStorage.setItem("cookiesAccepted", "true"); // Zapisz akceptację w localStorage
+    localStorage.setItem('cookiesAccepted', 'true'); // Zapisz akceptację w localStorage
     setVisible(false); // Ukryj modal
   };
 
   if (!visible) return null; // Jeśli modal jest ukryty, nie renderujemy nic
 
   return (
-    <div className="modal-cook">
-      <div className="modal-content">
+    <div className='modal-cook'>
+      <div className='modal-content'>
         <LiaCookieBiteSolid size={40} />
         <h3>Cenimy prywatność użytkowników</h3>
         <p>
@@ -29,7 +29,7 @@ const CookieModal = () => {
           prawidłowo i umożliwiał bezpieczne przesyłanie danych. Pliki te są
           niezbędne do obsługi funkcji strony i przechowywania Twoich ustawień.
         </p>
-        <button onClick={acceptCookies} id="accept-cookies">
+        <button onClick={acceptCookies} id='accept-cookies'>
           Akceptuję
         </button>
       </div>
