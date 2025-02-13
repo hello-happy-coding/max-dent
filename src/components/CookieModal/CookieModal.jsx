@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import './Cookie.css';
+import './CookieModal.css';
 import { LiaCookieBiteSolid } from 'react-icons/lia';
 
 const CookieModal = () => {
