@@ -1,10 +1,10 @@
 import React from 'react';
-import './Place.css';
+import './Places.css';
 import 'animate.css';
 
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
-const Place = () => {
+const Places = () => {
   return (
     <div className='Information'>
       <div className='left-section'>
@@ -49,4 +49,4 @@ const Place = () => {
   );
 };
 
-export default Place;
+export default Places;
