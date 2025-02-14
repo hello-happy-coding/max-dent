@@ -4,7 +4,7 @@ import Second from './ImgComponents/Second/Second';
 import Third from './ImgComponents/Third/Third';
 import FirstVisit from '../FirstVisit/FirstVisit';
 import OurServices from '../OurServices/OurServices';
-import Place from '../Place/Place';
+import Places from '../Places/Places';
 import ContactForm from '../ContactForm/ContactForm';
 
 const Main = () => {
@@ -16,7 +16,7 @@ const Main = () => {
       <FirstVisit />
       <Third />
       <ContactForm />
-      <Place />
+      <Places />
     </div>
   );
 };
