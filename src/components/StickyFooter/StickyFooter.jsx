@@ -6,7 +6,7 @@ import { FaInstagram } from 'react-icons/fa';
 
 const currentYear = new Date().getFullYear();
 
-function StickyFooter() {
+const StickyFooter = () => {
   return (
     <footer className='sticky-footer'>
       <div className='left-section-footer'>
@@ -44,6 +44,6 @@ function StickyFooter() {
       </div>
     </footer>
   );
-}
+};
 
 export default StickyFooter;

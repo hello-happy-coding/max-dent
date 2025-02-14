@@ -1,7 +1,7 @@
 import React from 'react';
 import { useEffect, useState } from 'react';
 
-function TelefonButton() {
+const TelephoneButton = () => {
   const [BackToTop, setBackToTop] = useState(false);
   useEffect(() => {
     const handleScroll = () => {
@@ -43,6 +43,6 @@ function TelefonButton() {
       )}
     </div>
   );
-}
+};
 
-export default TelefonButton;
+export default TelephoneButton;

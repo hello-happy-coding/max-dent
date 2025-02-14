@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
 import logow from '../../../../assets/logo/logow.svg';
-import '../First/First.css';
+import './First.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import Tools from '../../../../assets/images/main.jpg';
 
-function First() {
+const First = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -75,6 +75,6 @@ function First() {
       </div>
     </>
   );
-}
+};
 
 export default First;

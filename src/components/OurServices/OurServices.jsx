@@ -1,9 +1,9 @@
 import React from 'react';
-import './OuersServices.css';
+import './OurServices.css';
 import Offer from '../Offer/Offer';
 import Divider from '../Divider/Divider';
 
-const OuersService = () => {
+const OurServices = () => {
   return (
     <div id='nasza-oferta' className='containerService'>
       <h3>NASZA OFERTA</h3>
@@ -13,4 +13,4 @@ const OuersService = () => {
   );
 };
 
-export default OuersService;
+export default OurServices;

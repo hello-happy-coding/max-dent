@@ -1,24 +1,24 @@
 import React from 'react';
-import ImageOne from './ImgComponents/First/First';
-import ImageTwo from '../../components/Main/ImgComponents/Second/Second';
-import ImageThree from './ImgComponents/Third/Third';
+import First from './ImgComponents/First/First';
+import Second from './ImgComponents/Second/Second';
+import Third from './ImgComponents/Third/Third';
 import FirstVisit from '../FirstVisit/FirstVisit';
-import OuersServices from '../OuersServices/OuersServices';
+import OurServices from '../OurServices/OurServices';
 import Place from '../Place/Place';
 import ContactForm from '../ContactForm/ContactForm';
 
-function Main() {
+const Main = () => {
   return (
     <div>
-      <ImageOne />
-      <OuersServices />
-      <ImageTwo />
+      <First />
+      <OurServices />
+      <Second />
       <FirstVisit />
-      <ImageThree />
+      <Third />
       <ContactForm />
       <Place />
     </div>
   );
-}
+};
 
 export default Main;
