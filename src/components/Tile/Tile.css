@@ -4,9 +4,7 @@
   padding: 20px;
   text-align: center;
   cursor: pointer;
-  transition:
-    background-color 0.3s ease,
-    transform 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .tile:hover {
@@ -55,14 +53,15 @@
   max-width: 700px;
   text-align: left; /* Wyrównanie tekstu */
   position: relative;
-  background-color: rgba(255, 255, 255, 0.7);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  background-color: rgba(238, 232, 232, 0.77);
+  background-blend-mode: overlay;
 }
 
 .modal-background::before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;

@@ -28,6 +28,18 @@
   gap: 60px;
 }
 
+/* Hamburger menu (DOMYŚLNIE UKRYTE) */
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 28px;
+  color: white;
+  cursor: pointer;
+  position: absolute;
+  left: 15px;
+}
+
 /* Logo */
 .center-logo {
   height: 100px;
@@ -46,9 +58,7 @@
   color: white;
   font-size: 18px;
   text-decoration: none;
-  transition:
-    text-decoration 0.3s ease,
-    color 0.3s ease;
+  transition: text-decoration 0.3s ease, color 0.3s ease;
 }
 
 .nav-right a:hover,
@@ -56,18 +66,6 @@
   text-decoration: underline;
   cursor: pointer;
   color: #f1c40f; /* Złoty akcent na hover */
-}
-
-/* Hamburger menu (DOMYŚLNIE UKRYTE) */
-.hamburger {
-  display: none;
-  background: none;
-  border: none;
-  font-size: 28px;
-  color: white;
-  cursor: pointer;
-  position: absolute;
-  left: 15px;
 }
 
 /* Menu rozwijane (DOMYŚLNIE UKRYTE) */
@@ -111,43 +109,4 @@
   .mobile-menu.open {
     display: flex;
   }
-}
-
-/* Główne zdjęcie */
-.main-image-container {
-  position: relative;
-  width: 100%;
-  margin-top: 60px; /* Aby nie zasłaniało nawigacji */
-}
-
-.main-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-/* Tekst na zdjęciu */
-.clinic-info {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  transform: translateY(-50%);
-  color: white;
-  text-align: left;
-  background: rgba(0, 0, 0, 0.6);
-  padding: 15px 20px;
-  border-radius: 8px;
-}
-
-.clinic-desc {
-  font-size: 22px;
-  font-weight: 400;
-  opacity: 0.9;
-}
-
-.clinic-name {
-  font-size: 32px;
-  font-weight: bold;
-  margin-top: 5px;
-  color: #f1c40f; /* Złoty kolor dla elegancji */
 }

@@ -21,8 +21,6 @@ const Tile = ({ title, description, modalText, imagePath }) => {
             className='modal-content'
             style={{
               backgroundImage: imagePath,
-              backgroundColor: 'rgba(238, 232, 232, 0.77)', // Czarny kolor z przezroczystością 50%
-              backgroundBlendMode: 'overlay',
             }}
           >
             <button className='close-button' onClick={handleModal}>

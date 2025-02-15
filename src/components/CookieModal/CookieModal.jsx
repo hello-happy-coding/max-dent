@@ -29,7 +29,11 @@ const CookieModal = () => {
           prawidłowo i umożliwiał bezpieczne przesyłanie danych. Pliki te są
           niezbędne do obsługi funkcji strony i przechowywania Twoich ustawień.
         </p>
-        <button onClick={acceptCookies} id='accept-cookies'>
+        <button
+          className='cookie-modal-button'
+          onClick={acceptCookies}
+          id='accept-cookies'
+        >
           Akceptuję
         </button>
       </div>
