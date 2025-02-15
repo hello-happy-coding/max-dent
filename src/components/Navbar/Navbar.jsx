@@ -1,9 +1,8 @@
 import React, { useState } from 'react';
 import logo from '../../assets/images/logo.svg';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faBars } from '@fortawesome/free-solid-svg-icons';
 import './Navbar.css';
+import { GiHamburgerMenu } from 'react-icons/gi';
 
 const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,7 +16,7 @@ const Navbar = () => {
       <nav className='nav'>
         <div className='nav-container'>
           <button className='hamburger' onClick={toggleMenu}>
-            <FontAwesomeIcon icon={faBars} />
+            <GiHamburgerMenu />
           </button>
           <img src={logo} alt='logo' className='center-logo' />
 

@@ -43,7 +43,7 @@
   font-size: 1.3rem;
 }
 
-.modal-content {
+.tile-modal-content {
   display: grid; /* Ustawienie flexboxa */
   align-items: start; /* Wyrównanie elementów w pionie */
   justify-content: space-between; /* Odstęp między zdjęciem a tekstem */

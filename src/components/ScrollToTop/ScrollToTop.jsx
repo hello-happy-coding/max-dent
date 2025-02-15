@@ -1,5 +1,5 @@
 import React from 'react';
-import arrowIcon from '../../assets/images/arrow.svg';
+import { HiChevronDoubleUp } from 'react-icons/hi';
 import './ScrollToTop.css';
 
 const ScrollToTop = () => {
@@ -13,7 +13,7 @@ const ScrollToTop = () => {
   return (
     <div className='buttonScrollContainer'>
       <button className='scroll-to-top-button' onClick={scrollUp}>
-        <img src={arrowIcon} alt='arrowIcon' />
+        <HiChevronDoubleUp size={24} />
       </button>
     </div>
   );

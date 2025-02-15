@@ -1,7 +1,7 @@
 import React from 'react';
 import Divider from '../Divider/Divider';
 import './ContactForm.css';
-import CaffeImage from '../../assets/images/caffe.jpg';
+import caffeImage from '../../assets/images/caffe.jpg';
 import { elementId } from '../../constants/elementId';
 
 const ContactForm = () => {
@@ -12,7 +12,7 @@ const ContactForm = () => {
       <form action='https://formsubmit.co/arkzurek@gmail.com' method='POST'>
         <div className='container'>
           <div className='container-image'>
-            <img src={CaffeImage} alt='cafe' className='form-image' />
+            <img src={caffeImage} alt='cafe' className='form-image' />
           </div>
           <div class='form-container'>
             <div class='form-group'>

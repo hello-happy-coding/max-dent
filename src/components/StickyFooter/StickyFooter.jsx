@@ -2,6 +2,7 @@ import React from 'react';
 import './StickyFooter.css';
 import { BiLogoFacebookSquare } from 'react-icons/bi';
 import { FaInstagram } from 'react-icons/fa';
+import { BiCopyright } from 'react-icons/bi';
 import logo from '../../assets/images/logo.svg';
 
 const currentYear = new Date().getFullYear();
@@ -13,7 +14,7 @@ const StickyFooter = () => {
         <img src={logo} alt='logo' className='dark-logo' />
         <div className='content-footer'>
           <div className='all-right'>
-            &copy; {currentYear} Wszelkie prawa zastrzeżone. ‖
+            <BiCopyright /> {currentYear} Wszelkie prawa zastrzeżone. ‖
           </div>
           <a
             href='https://happy-coding.pl'
