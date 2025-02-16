@@ -9,10 +9,6 @@
   flex: 2;
 }
 
-.dark-logo {
-  width: 150px; /* Możesz dostosować rozmiar */
-}
-
 .content-footer {
   display: flex;
   flex-direction: column;

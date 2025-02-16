@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import logo from '../../assets/images/logo.svg';
+
+import Logo from '../Logo/Logo';
 
 import './Navbar.css';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -18,7 +19,7 @@ const Navbar = () => {
           <button className='hamburger' onClick={toggleMenu}>
             <GiHamburgerMenu />
           </button>
-          <img src={logo} alt='logo' className='center-logo' />
+          <Logo width='auto' height='80px' />
 
           {/* Menu standardowe (ukryte powyżej 580px) */}
           <div className='nav-left'>

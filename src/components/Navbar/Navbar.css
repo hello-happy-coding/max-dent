@@ -40,11 +40,6 @@
   left: 15px;
 }
 
-/* Logo */
-.center-logo {
-  height: 100px;
-}
-
 /* Menu standardowe (widoczne na małych ekranach) */
 .nav-right,
 .nav-left {
