@@ -106,7 +106,7 @@
   flex-direction: column; /* Ustawienie elementów w kolumnie */
   align-items: center; /* Wyśrodkowanie zawartości w poziomie */
   flex: 1; /* Formularz będzie zajmował drugą połowę przestrzeni */
-  width: 100%;
+  width: 90%;
   height: 500px;
 }
 
