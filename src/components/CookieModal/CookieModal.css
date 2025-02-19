@@ -19,7 +19,7 @@
   text-align: center;
 }
 
-button {
+.cookie-modal-button {
   margin-top: 10px;
   padding: 10px;
   background: orange;
@@ -29,6 +29,6 @@ button {
   border-radius: 5px;
 }
 
-button:hover {
+.cookie-modal-button:hover {
   background: #000000;
 }

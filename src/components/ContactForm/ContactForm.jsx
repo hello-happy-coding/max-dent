@@ -2,11 +2,12 @@ import React from 'react';
 import Divider from '../Divider/Divider';
 import './ContactForm.css';
 import CaffeImage from '../../assets/images/caffe.jpg';
+import { elementId } from '../../constants/elementId';
 
 const ContactForm = () => {
   return (
     <div className='contact'>
-      <h3 id='umów się na wizytę'>ZAPRASZAMY DO KONTAKTU</h3>
+      <h3 id={elementId.contact}>ZAPRASZAMY DO KONTAKTU</h3>
       <Divider />
       <form action='https://formsubmit.co/arkzurek@gmail.com' method='POST'>
         <div className='container'>

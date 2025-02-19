@@ -1,0 +1,38 @@
+/* Główne zdjęcie */
+.main-image-container {
+  position: relative;
+  width: 100%;
+  margin-top: 60px; /* Aby nie zasłaniało nawigacji */
+}
+
+.main-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Tekst na zdjęciu */
+.clinic-info {
+  position: absolute;
+  top: 50%;
+  left: 5%;
+  transform: translateY(-50%);
+  color: white;
+  text-align: left;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 15px 20px;
+  border-radius: 8px;
+}
+
+.clinic-desc {
+  font-size: 22px;
+  font-weight: 400;
+  opacity: 0.9;
+}
+
+.clinic-name {
+  font-size: 32px;
+  font-weight: bold;
+  margin-top: 5px;
+  color: #f1c40f; /* Złoty kolor dla elegancji */
+}

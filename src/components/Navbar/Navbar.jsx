@@ -1,0 +1,64 @@
+import React, { useState } from 'react';
+import logo from '../../assets/images/logo.svg';
+
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
+import './Navbar.css';
+
+const Navbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setMenuOpen((prev) => !prev);
+  };
+
+  return (
+    <header className='nav-overlay'>
+      <nav className='nav'>
+        <div className='nav-container'>
+          <button className='hamburger' onClick={toggleMenu}>
+            <FontAwesomeIcon icon={faBars} />
+          </button>
+          <img src={logo} alt='logo' className='center-logo' />
+
+          {/* Menu standardowe (ukryte powyżej 580px) */}
+          <div className='nav-left'>
+            <a href='#nasza-oferta'>
+              <b>NASZA OFERTA</b>
+            </a>
+          </div>
+
+          <div className='nav-right'>
+            <a
+              href='https://maps.app.goo.gl/Xx2G8JeoEFtho7Sm8'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <b>UL. NOWA 13, OLKUSZ</b>
+            </a>
+            <a href='tel:+48669000700'>
+              <b>+48 669 000 700</b>
+            </a>
+          </div>
+          <div className={`mobile-menu ${menuOpen ? 'open' : ''}`}>
+            <a href='#nasza-oferta'>
+              <b>NASZA OFERTA</b>
+            </a>
+            <a
+              href='https://maps.app.goo.gl/Xx2G8JeoEFtho7Sm8'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <b>UL. NOWA 13, OLKUSZ</b>
+            </a>
+            <a href='tel:+48669000700'>
+              <b>+48 669 000 700</b>
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+  );
+};
+
+export default Navbar;

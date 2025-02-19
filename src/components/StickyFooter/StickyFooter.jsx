@@ -1,8 +1,8 @@
 import React from 'react';
-import logod from '../../assets/logo/logod.png';
 import './StickyFooter.css';
 import { BiLogoFacebookSquare } from 'react-icons/bi';
 import { FaInstagram } from 'react-icons/fa';
+import logo from '../../assets/images/logo.svg';
 
 const currentYear = new Date().getFullYear();
 
@@ -10,7 +10,7 @@ const StickyFooter = () => {
   return (
     <footer className='sticky-footer'>
       <div className='left-section-footer'>
-        <img src={logod} alt='logo' className='dark-logo' />
+        <img src={logo} alt='logo' className='dark-logo' />
         <div className='content-footer'>
           <div className='all-right'>
             &copy; {currentYear} Wszelkie prawa zastrzeżone. ‖
