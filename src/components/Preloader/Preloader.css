@@ -15,8 +15,8 @@
   text-align: center;
 }
 
-/* Styl dla Kitka */
-.kitek-gif {
+/* Styl dla loadera */
+.preloader-gif {
   width: 150px;
   height: auto;
   animation: fadeIn 1s ease-in-out;

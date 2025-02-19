@@ -6,7 +6,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Places = () => {
   return (
-    <div className='Information'>
+    <div className='information'>
       <div className='left-section'>
         <div className='city'>OLKUSZ</div>
 

@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react';
 import './Preloader.css';
-import Kitek from '../../assets/images/kitek1.gif'; // Ścieżka do GIF-a
+import preloader from '../../assets/gifs/preloader.gif'; // Ścieżka do GIF-a
 
 const Preloader = () => {
   const [loading, setLoading] = useState(true);
@@ -14,7 +14,7 @@ const Preloader = () => {
   return (
     <div className='preloader'>
       <div className='loader'>
-        <img src={Kitek} alt='Ładowanie...' className='kitek-gif' />
+        <img src={preloader} alt='Ładowanie...' className='preloader-gif' />
       </div>
     </div>
   );

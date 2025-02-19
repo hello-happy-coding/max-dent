@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './Tile.css';
+import { RiCloseFill } from 'react-icons/ri';
 
 const Tile = ({ title, description, modalText, imagePath }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -18,13 +19,13 @@ const Tile = ({ title, description, modalText, imagePath }) => {
       {isModalOpen && (
         <div className='modal'>
           <div
-            className='modal-content'
+            className='tile-modal-content'
             style={{
               backgroundImage: imagePath,
             }}
           >
             <button className='close-button' onClick={handleModal}>
-              &times;
+              <RiCloseFill />
             </button>
             <h2 className='modal-heading'>{title}</h2>
             <p className='modal-text'>{modalText}</p>
