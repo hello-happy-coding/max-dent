@@ -1,7 +1,7 @@
 import React from "react";
 import Divider from "../Divider/Divider";
 import "./ContactForm.css";
-import caffeImage from "../../assets/images/caffe.jpg";
+import caffeImage from "../../assets/images/caffe.webp";
 import { elementId } from "../../constants/elementId";
 
 const ContactForm = () => {
