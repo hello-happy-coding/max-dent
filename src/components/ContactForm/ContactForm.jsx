@@ -7,7 +7,9 @@ import { elementId } from "../../constants/elementId";
 const ContactForm = () => {
   return (
     <div className="contact">
-      <h3 id={elementId.contact}>ZAPRASZAMY DO KONTAKTU</h3>
+      <h3 id={elementId.contact} className="invite">
+        ZAPRASZAMY DO KONTAKTU
+      </h3>
       <Divider />
       <form action="https://formsubmit.co/arkzurek@gmail.com" method="POST">
         <div className="container">
