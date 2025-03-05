@@ -16,9 +16,9 @@ const ContactForm = () => {
           <div className="container-image">
             <img src={caffeImage} alt="cafe" className="form-image" />
           </div>
-          <div class="form-container">
-            <div class="form-group">
-              <label for="name">Imię i nazwisko:</label>
+          <div className="form-container">
+            <div className="form-group">
+              <label htmlFor="name">Imię i nazwisko:</label>
               <input
                 type="text"
                 id="name"
@@ -27,8 +27,8 @@ const ContactForm = () => {
                 required
               />
             </div>
-            <div class="form-group">
-              <label for="email">Twój mail:</label>
+            <div className="form-group">
+              <label htmlFor="email">Twój mail:</label>
               <input
                 type="email"
                 id="email"
@@ -37,8 +37,8 @@ const ContactForm = () => {
                 required
               />
             </div>
-            <div class="form-group">
-              <label for="phone">Twój numer kontaktowy:</label>
+            <div className="form-group">
+              <label htmlFor="phone">Twój numer kontaktowy:</label>
               <input
                 type="tel"
                 id="phone"
@@ -47,8 +47,8 @@ const ContactForm = () => {
                 required
               />
             </div>
-            <div class="form-group">
-              <label for="message">Twoja wiadomość:</label>
+            <div className="form-group">
+              <label htmlFor="message">Twoja wiadomość:</label>
               <textarea
                 id="message"
                 name="message"
@@ -57,7 +57,7 @@ const ContactForm = () => {
                 required
               ></textarea>
             </div>
-            <button type="submit" class="submit-btn">
+            <button type="submit" className="submit-btn">
               Wyślij
             </button>
           </div>
