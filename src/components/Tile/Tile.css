@@ -5,11 +5,24 @@
   text-align: center;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.3s ease;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+@media (min-width: 768px) {
+  .tile {
+    width: unset;
+    min-width: 288px;
+  }
 }
 
 .tile:hover {
-  background-color: orange;
+  background-color: #ff9800;
   transform: scale(1.05);
+
+  .tile-description {
+    color: black;
+  }
 }
 
 .tile-title {

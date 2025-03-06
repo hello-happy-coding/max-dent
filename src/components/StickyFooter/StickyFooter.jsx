@@ -1,45 +1,46 @@
-import React from "react";
-import "./StickyFooter.css";
-import { BiLogoFacebookSquare } from "react-icons/bi";
-import { FaInstagram } from "react-icons/fa";
-import { BiCopyright } from "react-icons/bi";
-import Logo from "../Logo/Logo";
+import React from 'react';
+import './StickyFooter.css';
+import { BiLogoFacebookSquare } from 'react-icons/bi';
+import { FaInstagram } from 'react-icons/fa';
+import { BiCopyright } from 'react-icons/bi';
+import Logo from '../Logo/Logo';
 
 const currentYear = new Date().getFullYear();
 
 const StickyFooter = () => {
   return (
-    <footer className="sticky-footer">
-      <div className="left-section-footer">
-        <Logo width="150px" height="auto" />
-        <div className="content-footer">
-          <div className="all-right">
-            <BiCopyright /> {currentYear} Wszelkie prawa zastrzeżone. ‖
+    <footer className='sticky-footer'>
+      <div className='content-footer'>
+        <div className='footer-top'>
+          <Logo width='150px' height='auto' />
+          <div className='icons'>
+            <a
+              href='https://www.facebook.com/profile.php?id=100063535452341#'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <BiLogoFacebookSquare size='24' className='icon' />
+            </a>
+            <a
+              href='https://www.instagram.com/ortho.of.care/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <FaInstagram size='24' className='icon' />
+            </a>
           </div>
-          <a
-            href="https://happy-coding.pl"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <div className="happy-coding">By Happy Coding</div>
-          </a>
         </div>
-      </div>
-      <div className="right-section">
-        <div className="icons">
+        <div className='footer-bottom'>
+          <span>
+            <BiCopyright /> {currentYear} Wszelkie prawa zastrzeżone. ‖
+          </span>
           <a
-            href="https://www.facebook.com/profile.php?id=100063535452341#"
-            target="_blank"
-            rel="noopener noreferrer"
+            className='happy-coding'
+            href='https://happy-coding.pl'
+            target='_blank'
+            rel='noopener noreferrer'
           >
-            <BiLogoFacebookSquare className="icon" />
-          </a>
-          <a
-            href="https://www.instagram.com/ortho.of.care/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <FaInstagram className="icon" />
+            <div>By Happy Coding</div>
           </a>
         </div>
       </div>

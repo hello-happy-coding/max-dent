@@ -2,17 +2,17 @@
 .information {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  background-color: lightgray;
+  background-color: #f4f4f4;
   padding: 30px;
-  margin: 50px auto;
+  margin: 50px 0;
   max-width: 100%;
+  gap: 24px;
 }
 
-/* Lewa sekcja (Olkusz + kontakt + tabela) */
+/* Lewa sekcja (kontakt + tabela) */
 .left-section {
   text-align: center;
-  padding-right: 20px;
+  flex: 1;
 }
 
 .right-section-table {
@@ -22,18 +22,8 @@
 @media (min-width: 1000px) {
   .right-section-table {
     flex: 1;
-    max-width: 30%;
     margin-top: 30px;
   }
-}
-
-.city {
-  margin-bottom: 40px;
-  font-size: 2rem;
-  font-weight: bold;
-  color: rgba(255, 166, 0, 0.767);
-  text-transform: uppercase;
-  display: block;
 }
 
 .contact-info {
@@ -59,66 +49,31 @@
 /* TABELA */
 .schedule-table {
   width: 100%;
-  margin-top: 20px;
   font-size: 1rem;
   background-color: #ffffff;
-  padding: 20px;
-  border-collapse: collapse;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
 }
 
-.schedule-table th,
-.schedule-table td {
+.schedule-table-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 20px;
   text-align: center;
   font-size: 1rem;
   color: #000;
   border-bottom: 1px solid #ddd;
 }
 
-.lunes {
-  padding-top: 25px;
-  padding-bottom: 5px;
-  padding-left: 25px;
-  padding-right: 25px;
-}
-
-.viernes {
-  padding-bottom: 25px;
-  padding-top: none;
-}
-
-.martes {
-  padding-top: 5px;
-  padding-bottom: 5px;
-}
-
-.schedule-table th {
-  background: #f8f8f8;
-  font-weight: bold;
-  border-bottom: 2px solid #ddd;
-}
-
-.schedule-table tr:last-child td {
-  border-bottom: none;
-}
-
 /* RESPONSYWNOŚĆ */
 @media (min-width: 768px) {
   .information {
     display: flex;
-    flex-direction: row;
+    flex-direction: row-reverse;
     align-items: center;
     text-align: center;
     padding: 40px;
     gap: 50px;
     justify-content: center;
-  }
-
-  .left-section {
-    margin-bottom: 0;
-  }
-
-  .city {
-    font-size: 1.8rem;
   }
 }
