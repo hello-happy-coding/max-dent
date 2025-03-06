@@ -8,8 +8,6 @@ const Places = () => {
   return (
     <div className='information'>
       <div className='left-section'>
-        <div className='city'>OLKUSZ</div>
-
         <div className='contact-item'>
           <FaPhone className='icon' />
           <span>669 000 700</span>
@@ -28,22 +26,18 @@ const Places = () => {
 
       {/* Tabela godzin otwarcia */}
       <div className='right-section-table'>
-        <table className='schedule-table'>
-          <tbody>
-            <tr>
-              <td className='lunes'>Poniedziałek</td>
-              <td className='lunes'>11:00 - 18:00</td>
-            </tr>
-            <tr>
-              <td className='martes'>Wtorek</td>
-              <td className='martes'>11:00 - 18:00</td>
-            </tr>
-            <tr>
-              <td className='viernes'>Czwartek</td>
-              <td className='viernes'>11:00 - 18:00</td>
-            </tr>
-          </tbody>
-        </table>
+        <div className='schedule-table'>
+          {[
+            { day: 'Poniedziałek', hours: '11:00 - 18:00' },
+            { day: 'Wtorek', hours: '11:00 - 18:00' },
+            { day: 'Czwartek', hours: '11:00 - 18:00' },
+          ].map((item) => (
+            <div className='schedule-table-row'>
+              <span className='schedule-table-row-item'>{item.day}</span>
+              <span className='schedule-table-row-item'>{item.hours}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -2,7 +2,7 @@
   margin: 20px;
 }
 
-.invite{
+.invite {
   scroll-margin-top: 90px;
 }
 
@@ -58,7 +58,7 @@
   cursor: pointer;
   transition: background-color 0.3s ease;
   margin-top: 15px; /* Odstęp od ostatniego pola */
-  align-self: center; /* Wyśrodkowanie przycisku */
+  align-self: flex-end;
 }
 
 .submit-btn:hover {

@@ -2,7 +2,6 @@
 .main-image-container {
   position: relative;
   width: 100%;
-  margin-top: 60px; /* Aby nie zasłaniało nawigacji */
 }
 
 .main-image {
