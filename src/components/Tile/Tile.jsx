@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
-import './Tile.css';
-import { RiCloseFill } from 'react-icons/ri';
+import React, { useState } from "react";
+import "./Tile.css";
+import { RiCloseFill } from "react-icons/ri";
 
 const Tile = ({ title, description, modalText, imagePath }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -11,24 +11,28 @@ const Tile = ({ title, description, modalText, imagePath }) => {
 
   return (
     <>
-      <div className='tile' onClick={handleModal}>
-        <h3 className='tile-title'>{title}</h3>
-        <p className='tile-description'>{description}</p>
+      <div className="tile" onClick={handleModal}>
+        <h3 className="tile-title">{title}</h3>
+        <p className="tile-description">{description}</p>
       </div>
 
       {isModalOpen && (
-        <div className='modal'>
+        <div className="modal">
           <div
-            className='tile-modal-content'
+            className="tile-modal-content"
             style={{
               backgroundImage: imagePath,
             }}
           >
-            <button className='close-button' onClick={handleModal}>
+            <button
+              aria-label="Zamknij okno"
+              className="close-button"
+              onClick={handleModal}
+            >
               <RiCloseFill />
             </button>
-            <h2 className='modal-heading'>{title}</h2>
-            <p className='modal-text'>{modalText}</p>
+            <h2 className="modal-heading">{title}</h2>
+            <p className="modal-text">{modalText}</p>
           </div>
         </div>
       )}

@@ -7,11 +7,21 @@ import TelephoneButton from './components/TelephoneButton/TelephoneButton';
 import '@fontsource/cormorant-garamond';
 import CookieModal from './components/CookieModal/CookieModal';
 import Preloader from '../src/components/Preloader/Preloader';
+import { useEffect, useState } from 'react';
 
 function App() {
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => setLoading(false), 5000); // Preloader znika po 5s
+  }, []);
+
+  if (loading) {
+    return <Preloader />
+  };
+
   return (
     <div className='App'>
-      <Preloader />
       <Main />
       <StickyFooter />
       <BackToTop />

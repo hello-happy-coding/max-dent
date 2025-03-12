@@ -12,7 +12,11 @@ const ScrollToTop = () => {
 
   return (
     <div className="buttonScrollContainer">
-      <button className="scroll-to-top-button" onClick={scrollUp}>
+      <button
+        aria-label="idż do góry strony"
+        className="scroll-to-top-button"
+        onClick={scrollUp}
+      >
         <HiChevronDoubleUp size={24} />
       </button>
     </div>

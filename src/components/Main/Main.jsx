@@ -11,7 +11,7 @@ import Navbar from "../Navbar/Navbar";
 
 const Main = () => {
   return (
-    <div>
+    <>
       <Navbar />
       <Hero />
       <OurServices />
@@ -20,7 +20,7 @@ const Main = () => {
       <ParallaxImage image={parallaxImageTwo} />
       <ContactForm />
       <Places />
-    </div>
+    </>
   );
 };
 
