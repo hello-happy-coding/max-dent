@@ -14,7 +14,7 @@ const tilesData = [
     title: "ENDODONCJA",
     description: "Zabiegi leczenia kanałowego z użyciem mikroskopu.",
     modalText:
-      "Endodoncja to leczenie kanałowe, które ratuje zęby przed usunięciem. Polega na oczyszczeniu zainfekowanej miazgi i wypełnieniu kanałów, co zapobiega dalszym infekcjom. Zabieg z wykorzystaniem mikroskopu jest precyzyjny i bezbolesny, dzięki znieczuleniu miejscowemu. Leczenie eliminuje ból, zachowując naturalny ząb i unikając konieczności stosowania protez czy implantów. Jeśli odczuwasz ból lub obrzęk, zgłoś się na konsultację - zadbamy o Twój komfort i zdrowy uśmiech!",
+      "Endodoncja to leczenie kanałowe, które ratuje zęby przed usunięciem. Polega na oczyszczeniu zainfekowanej miazgi i wypełnieniu kanałów, co zapobiega dalszym infekcjom. Leczenie eliminuje ból, zachowując naturalny ząb i unikając konieczności stosowania protez czy implantów. Jeśli odczuwasz ból lub obrzęk, zgłoś się na konsultację - zadbamy o Twój komfort i zdrowy uśmiech!",
     backgroundImagePath: `url(${require("./../../assets/images/offer/en.webp")})`,
   },
   {
