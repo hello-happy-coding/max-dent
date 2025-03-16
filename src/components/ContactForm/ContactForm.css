@@ -57,7 +57,7 @@
   font-size: 16px;
   cursor: pointer;
   transition: background-color 0.3s ease;
-  margin-top: 15px; /* Odstęp od ostatniego pola */
+  margin: 15px 0;
   align-self: flex-end;
 }
 

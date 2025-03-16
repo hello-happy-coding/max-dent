@@ -11,10 +11,6 @@
   justify-content: center;
 }
 
-.logo-container {
-  margin-left: unset;
-}
-
 /* Kontener nawigacji */
 .nav {
   display: flex;
@@ -26,6 +22,7 @@
 .nav-container {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   width: 100%;
   padding: 0 24px;
 }
@@ -43,7 +40,6 @@
 
 /* Menu standardowe (widoczne na małych ekranach) */
 .nav-right {
-  margin-left: auto;
   display: flex;
   align-items: center;
   gap: 24px;
@@ -95,14 +91,6 @@
 @media (max-width: 800px) {
   .hamburger {
     display: block;
-  }
-
-  .logo-container {
-    margin-left: auto;
-  }
-
-  .nav-container {
-    justify-content: flex-start;
   }
 
   .nav-right {

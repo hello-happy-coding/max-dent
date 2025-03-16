@@ -23,6 +23,7 @@
 @media (min-width: 800px) {
   .footer-bottom {
     flex-direction: row;
+    align-items: flex-end;
   }
 }
 
