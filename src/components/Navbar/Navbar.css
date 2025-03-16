@@ -27,7 +27,6 @@
   display: flex;
   align-items: center;
   width: 100%;
-  gap: 60px;
   padding: 0 24px;
 }
 
@@ -47,7 +46,6 @@
   margin-left: auto;
   display: flex;
   align-items: center;
-  gap: 60px;
 }
 
 .nav-right a,
